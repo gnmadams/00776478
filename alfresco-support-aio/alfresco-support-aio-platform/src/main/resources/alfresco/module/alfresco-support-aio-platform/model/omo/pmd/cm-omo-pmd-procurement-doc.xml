@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="pd:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/pd/1.0" prefix="pd"/>
+    </namespaces>
+
+    <types>
+
+        <type name="pd:procurementDocuments">
+            <title>OMO PMD Procurement Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="pd:subtype">
+                    <title>Procurement Documents Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="pd:contractNumber">
+                    <title>Contract Number</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="pd:contractFileName">
+                    <title>Contract File Name</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="pd:modificationNumber">
+                    <title>Modification Number</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="pd:taskOrderNumber">
+                    <title>Task Order Number</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="pd:contractorName">
+                    <title>Contractor Name</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+                
+        <type name="pd:contractDocument">
+            <title>OMO PMD Contract Document</title>
+            <parent>pd:procurementDocuments</parent>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Contract Documents</default>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractFileName">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:awardDocument">
+            <title>OMO PMD Award Document</title>
+            <parent>pd:procurementDocuments</parent>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Award Documents</default>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractFileName">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:modifications">
+            <title>OMO PMD Modifications</title>
+            <parent>pd:procurementDocuments</parent>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Modifications</default>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:modificationNumber">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:taskOrders">
+            <title>OMO PMD Task Orders</title>
+            <parent>pd:procurementDocuments</parent>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Task Orders</default>
+                </property>
+                <property name="pd:taskOrderNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractorName">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:statementOfWork">
+            <title>OMO PMD Statement of Work</title>
+            <parent>pd:procurementDocuments</parent>
+            <properties>
+                <property name="pd:taskOrder">
+                    <title>Task Order</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Statement of Work</default>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractFileName">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:invoices">
+            <title>OMO PMD Invoices</title>
+            <parent>pd:procurementDocuments</parent>
+            <properties>
+                <property name="pd:invoiceNumber">
+                    <title>Invoice Number</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="pd:optionYear">
+                    <title>Option Year</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Invoices</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="pd:otherMiscellaneous">
+            <title>OMO PMD Other/Miscellaneous</title>
+            <parent>pd:procurementDocuments</parent>
+            <overrides>
+                <property name="pd:subtype">
+                    <default>Other/Miscellaneous</default>
+                </property>
+                <property name="pd:contractNumber">
+	                <mandatory>true</mandatory>
+                </property>
+                <property name="pd:contractFileName">
+	                <mandatory>true</mandatory>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+<!--  
+    <aspects>
+
+	</aspects> 
+-->
+</model>
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="remiccd:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/remiccd/1.0" prefix="remiccd"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="remiccd:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+            	<!-- REMIC -->
+               <value /><!-- Empty for default search--> 
+               <value>Sponsor Agreement</value>
+               <value>Standard Sponsor Provisions</value>
+               <value>Offering Circular Supplement</value>
+               <value>Base Offering Circular</value>
+               <value>Accountants Agree-upon Procedures (Print)</value>
+               <value>Respresentation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Print)</value>
+               <value>Trustee Receipt and Safekeeping Agreement</value>
+               <value>REMIC Trust Agreement</value>
+               <value>REMIC Standard Trust Provisions</value>
+               <value>MX Trust Agreement</value>
+               <value>MX standard Trust provisions</value>
+               <value>GNMA Guaranty Agreement</value>
+               <value>OID Prices Letter</value>
+               <value>Transfer Affidavit relating to the Residual Securities</value>
+               <value>Issuance Statement</value>
+               <value>Waiver Agreement</value>
+               <value>Transaction Opinion</value>
+               <value>MX Tax Opinion</value>
+               <value>Opinion of Sponsor</value>
+               <value>Opinion of Trustees Counsel</value>
+               <value>Opinion of HUD General Counsel</value>
+               <value>Accountants Agree-upon Procedures report (Closing)</value>
+               <value>Respresentation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Closing)</value>
+               <value>Closing Flow of Funds Instruction Letter</value>
+               <value>Glossary</value>
+               <value>Work Group List</value>
+               <!-- Market Intelligence -->
+               <value>Market Documents</value>
+               <!-- Global Emerging Market -->
+               <value>Emerging Documents</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="remiccd:REMIC_CLOSING_DOCUMENTS">
+            <title>REMIC Closing Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="remiccd:dealNumber">
+                    <title>Deal Number</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="remiccd:sponsor">
+                    <title>Sponsor</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="remiccd:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="remiccd:subContentTypeList" />
+               		</constraints>
+                    
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

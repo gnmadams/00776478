@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="smfissreeom:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+
+        <import uri="http://www.ginniemae.org/model/content/smfissrapp/1.0" prefix="smfissrapp"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/smfissreeom/1.0" prefix="smfissreeom"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="smfissreeom:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>Evidence of Errors and Omissions Coverage</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="smfissreeom:smfIssuerEvidenceOfErrorOmissions">
+            <title>OIPM Single-Multifamily Evidence of Errors and Omissions Coverage</title>
+            <parent>smfissrapp:smfIssuerApplicationDocuments</parent>
+            <properties>
+                <property name="smfissreeom:parentName">
+                    <title>Parent Name</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="smfissreeom:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="smfissreeom:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="smfissrcoi:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for DAMS: OIPM Multifamily Evidence of Fidelity Bond Insurance Coverage</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+
+        <import uri="http://www.ginniemae.org/model/content/smfissrapp/1.0" prefix="smfissrapp"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/smfissrcoi/1.0" prefix="smfissrcoi"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="smfissrcoi:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>Certificate of Insurance (ACORD document)</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="smfissrcoi:smfIssuerCertOfInsurance">
+            <title>OIPM Single-Multifamily Certificate of Insurance (ACORD document)</title>
+            <parent>smfissrapp:smfIssuerApplicationDocuments</parent>
+            <properties>
+                <property name="smfissrcoi:parentName">
+                    <title>Parent Name</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="smfissrcoi:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="smfissrcoi:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

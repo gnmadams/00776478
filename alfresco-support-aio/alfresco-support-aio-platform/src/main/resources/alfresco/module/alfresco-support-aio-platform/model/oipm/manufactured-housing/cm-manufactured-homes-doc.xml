@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="mhdoc:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        
+        <import uri="http://www.ginniemae.org/model/content/oipmroot/1.0" prefix="oipmroot"/>
+        
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/mhdoc/1.0" prefix="mhdoc"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="mhdoc:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>Loan Disposition Files</value>
+				<value>Rejected Application Files</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="mhdoc:mhDocuments">
+            <title>OIPM Manufactured Homes Documents</title>
+            <parent>oipmroot:oipmRoot</parent>
+            <properties>
+                <property name="mhdoc:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="mhdoc:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+    
+    <aspects>
+		<aspect name="mhdoc:edrmMhDocument">
+			<title>EDRM Manufactured Homes Document</title>
+        	<properties>
+                <property name="mhdoc:borrower1FirstName">
+                    <title>Borrower 1 First Name</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:borrower1LastName">
+                    <title>Borrower 1 Last Name</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:borrower2FirstName">
+                    <title>Borrower 2 First Name</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:borrower2LastName">
+                    <title>Borrower 2 Last Name</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:branch">
+                    <title>Branch</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:city">
+                    <title>City</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:loanNumber">
+                    <title>Loan Number</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:postalCode">
+                    <title>Postal Code</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>
+                <property name="mhdoc:state">
+                    <title>State</title>
+                    <type>d:text</type>
+	               <index enabled="true">
+    	              <tokenised>TRUE</tokenised>
+        	          <facetable>false</facetable>
+            	   </index>
+                </property>        	
+        	</properties>
+		</aspect>
+    </aspects>
+    
+</model>

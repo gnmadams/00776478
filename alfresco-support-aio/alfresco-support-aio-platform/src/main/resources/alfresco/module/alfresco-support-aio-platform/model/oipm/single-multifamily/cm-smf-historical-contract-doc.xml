@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="smfhistcon:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        
+        <import uri="http://www.ginniemae.org/model/content/oipmcont/1.0" prefix="oipmcont"/>
+        
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/smfhistcon/1.0" prefix="smfhistcon"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="smfhistcon:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>Historical Annual Audited Financial Statements</value>
+				<value>Fidelity and Insurance Information</value>
+				<value>IPA Independent Public Account Documents</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="smfhistcon:smfHistoricalContractDocuments">
+            <title>OIPM Single-Multifamily Historical Contract Documents</title>
+            <parent>oipmcont:oipmContract</parent>
+            <properties>
+                <property name="smfhistcon:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="smfhistcon:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

@@ -37,5 +37,16 @@
         <property name="nodeLocatorService" ref="nodeLocatorService" />
     </bean>
 
+	<bean id="defaultContentType" class="org.gnma.behavior.DefaultContentType" init-method="init">
+	    <property name="nodeService">
+	        <ref bean="NodeService" />
+	    </property>
+	    <property name="policyComponent">
+	        <ref bean="policyComponent" />
+	    </property>
+	    <property name="dictionaryService">
+	        <ref bean="DictionaryService" />
+	    </property>
+	</bean>
 
 </beans>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="withcr:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/withcr/1.0" prefix="withcr"/>
+    </namespaces>
+
+    <types>
+        <type name="withcr:hcrDocument">
+            <title>OMO Workforce Innovation Team Human Capital Report Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="withcr:subtype">
+                    <title>HCR Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="withcr:reportDate">
+                    <title>Report Date</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+                
+        <type name="withcr:biweeklyReport">
+            <title>OMO Workforce Innovation Team HCR Biweekly Report</title>
+            <parent>withcr:hcrDocument</parent>
+            <overrides>
+                <property name="withcr:subtype">
+                    <default>Biweekly Report</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+</model>

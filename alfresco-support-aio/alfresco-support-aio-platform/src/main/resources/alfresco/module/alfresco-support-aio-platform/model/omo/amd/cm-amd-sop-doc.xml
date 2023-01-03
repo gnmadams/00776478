@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="amds:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/amds/1.0" prefix="amds"/>
+    </namespaces>
+
+    <types>
+        <type name="amds:sopDocument">
+            <title>OMO Administration Management Division SOP Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="amds:subtype">
+                    <title>SOP Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="amds:process">
+                    <title>Process</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amds:sopName">
+                    <title>SOP Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+                
+        <type name="amds:trainingRequest">
+            <title>OMO Administration Management Division SOP Training Request</title>
+            <parent>amds:sopDocument</parent>
+            <overrides>
+                <property name="amds:subtype">
+                    <default>Training Request</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+</model>

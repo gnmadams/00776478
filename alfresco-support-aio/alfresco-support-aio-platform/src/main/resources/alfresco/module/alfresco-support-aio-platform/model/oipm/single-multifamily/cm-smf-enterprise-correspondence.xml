@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="smfentcorr:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+        
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/smfentcorr/1.0" prefix="smfentcorr"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="smfentcorr:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>All Participant Memoranda (APM)</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="smfentcorr:smfEnterpriseCorrespondence">
+            <title>OIPM Single-Multifamily Enterprise Correspondence</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="smfentcorr:apmNumber">
+                    <title>APM Number</title>
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="smfentcorr:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="smfentcorr:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

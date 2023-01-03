@@ -7,21 +7,6 @@
     <!-- The bootstrap-context.xml file is used for patch definitions, importers, 
 		 workflow, and loading custom content models.  -->
 
-    <!-- Registration of new models -->
-    <bean id="alfresco-support-aio-platform.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
-        <property name="models">
-            <list>
-                <value>alfresco/module/${project.artifactId}/model/content-model.xml</value>
-                <value>alfresco/module/${project.artifactId}/model/workflow-model.xml</value>
-            </list>
-        </property>
-        <property name="labels">
-            <list>
-                <!-- Bootstrap Resource Bundles for the content model types, aspects, properties etc -->
-                <value>alfresco/module/${project.artifactId}/messages/content-model</value>
-            </list>
-        </property>
-    </bean>
 
     <bean id="org.gnma.sampleprocess.workflowBootstrap" parent="workflowDeployer">
         <property name="workflowDefinitions">
@@ -36,6 +21,78 @@
         <property name="labels">
             <list>
                 <value>alfresco/module/${project.artifactId}/messages/workflow-messages</value>
+            </list>
+        </property>
+    </bean>
+    
+    
+    <!-- Registration of new models -->
+    <bean id="${project.artifactId}.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
+        <property name="models">
+            <list>
+                <!-- Root Models -->
+                <value>alfresco/module/${project.artifactId}/model/cm-gnma.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/cm-dams-base-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/cm-oipm-root.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/cm-oipm-contract-root.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/amd/cm-amd-elr-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/amd/cm-amd-hr-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/amd/cm-amd-training-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/amd/cm-amd-sop-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/amd/cm-amd-personnel-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/pmd/cm-omo-pmd-cor-contract-working-files.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/pmd/cm-omo-pmd-procurement-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-hcr-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-fevs-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-gp-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-omos-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-omopp-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/omo/wit/cm-wit-sga-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/ocfo/treasury/cm-ocfo-treasury-financial-record.xml</value>              
+                      
+                <!-- Child Models -->
+                <value>alfresco/module/${project.artifactId}/model/ocm/cm-remic-closing-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/gnma-public/cm-all-participant-memos.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-application-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-files.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-misc-files.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-supplemental-files.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-evidence-fbi-coverage.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-exec-subservice-agreement.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-org-chart-corp-family-affiliates.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-evidence-error-omissions.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-coi-acord-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-issuer-applicant-org-chart.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-contract-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-defaulted-issuer-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-electronic-contract-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-electronic-transfer-contract-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-enterprise-correspondence.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-formal-request.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-historical-contract-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-scanned-contract-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-supplemental-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/single-multifamily/cm-smf-terminated-issuer-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/manufactured-housing/cm-manufactured-homes-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/oipm/monitoring-asset-mgt/cm-monitoring-asset-mgt-doc.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/cm-dams-aspects.xml</value>
+            </list>
+        </property>
+        <property name="labels">
+            <list>
+                <!-- Bootstrap Resource Bundles for the content model types, aspects, properties etc -->
+                <value>alfresco/module/${project.artifactId}/messages/content-model</value>
+            </list>
+        </property>
+    </bean>
+    
+     <!-- Register new models for Upload Prompt in Share UI -->   
+    <bean id="uploader-plus-model"
+          parent="dictionaryModelBootstrap"
+          depends-on="dictionaryBootstrap">
+        <property name="models">
+            <list>
+          	  <value>alfresco/module/${project.artifactId}/model/uploader-plus-model.xml</value>
             </list>
         </property>
     </bean>

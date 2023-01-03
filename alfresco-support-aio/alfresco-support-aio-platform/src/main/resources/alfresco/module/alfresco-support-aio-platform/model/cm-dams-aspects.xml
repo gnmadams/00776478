@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="damsasp:contentModel">
+   <!-- Optional meta-data about the model -->
+   <description>Aspects model for GNMA DAMS</description>
+   <author>Tauqir Rajput</author>
+   <version>1.0</version>
+
+   <imports>
+      <!-- Import Alfresco Dictionary Definitions -->
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+   </imports>
+
+   <namespaces>
+      <namespace uri="http://www.ginniemae.org/model/content/damsaspects/1.0" prefix="damsasp" />
+   </namespaces>
+
+   <constraints>
+	<constraint name="damsasp:extDocSourceList" type="LIST">
+        <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+               <value>EDRM</value>
+<!--                <value>Gateway (REMIC)</value>
+ -->               <value>Other</value>
+            </list>
+         </parameter>
+     </constraint>
+<!--       <constraint name="damsasp:documentTypeListOptions" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               Empty for default search
+               <value>01_Official Financial Advisor Letter</value>
+               <value>02_Transaction Initiation Letter</value>
+               <value>03_Sponsor Agreement</value>
+               <value>04_Guaranty Agreement</value>
+               <value>05_Legal Advisor Letter</value>
+               <value>06_Offering Circulator Supplement</value>
+               <value>07_Misc</value>
+               <value>08_Closing Document - Disk</value>
+               <value>Historical</value>
+            </list>
+         </parameter>
+      </constraint>
+ -->   </constraints>
+    
+    
+    <aspects>
+		<aspect name="damsasp:edrmOcmDocument">
+			<title>EDRM OCM Document</title>
+	        <properties>
+	            <property name="damsasp:boxSequence">
+	                <title>Box Sequence</title>
+	                <type>d:text</type>
+	                <mandatory>true</mandatory>
+	                <index enabled="true">
+	                    <tokenised>TRUE</tokenised>
+	                    <facetable>false</facetable>
+	                </index>
+	          	</property>
+	          	<property name="damsasp:department">
+	   		        <title>Department</title>
+	       		    <type>d:text</type>
+	           		<mandatory>false</mandatory>
+	           		<index enabled="true">
+	               		<tokenised>TRUE</tokenised>
+	               		<facetable>false</facetable>
+	           		</index>
+				</property>
+	            <property name="damsasp:documentCategory">
+	                <title>Document Category</title>
+	                <type>d:text</type>
+	                <index enabled="true">
+	                   <tokenised>TRUE</tokenised>
+	                   <facetable>false</facetable>
+	                </index>
+	            </property>
+	            <property name="damsasp:documentType">
+	                <title>Document Type</title>
+	                <type>d:text</type>
+	                <mandatory>true</mandatory>
+	                <index enabled="true">
+	                    <tokenised>TRUE</tokenised>
+	                    <facetable>false</facetable>
+	                </index>
+<!-- 	                <constraints>
+	                    <constraint ref="damsasp:documentTypeListOptions" />
+	                </constraints>
+ -->	          	</property>
+	            <property name="damsasp:library">
+	               <title>Library</title>
+	               <type>d:text</type>
+	               <index enabled="true">
+	                  <tokenised>TRUE</tokenised>
+	                  <facetable>false</facetable>
+	               </index>
+	            </property>
+                <property name="damsasp:mcdfNumber">
+                    <title>MCDF Number</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="damsasp:trustNumber">
+                    <title>Trust Number</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="damsasp:year">
+                    <title>Year</title>
+                    <type>d:int</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+	        </properties>
+	        <associations/>
+	        <overrides/>
+	        <mandatory-aspects/>
+	    </aspect>
+
+		<aspect name="damsasp:edrmProcurementDocument">
+			<title>EDRM Procurement Document</title>
+	        <properties>
+                <property name="damsasp:amount">
+                    <title>Amount</title>
+                    <type>d:text</type>
+                </property>
+                <property name="damsasp:date">
+                    <title>Date</title>
+                    <type>d:text</type>
+                </property>
+                <property name="damsasp:companyName">
+                    <title>Company Name</title>
+                    <type>d:text</type>
+                </property>
+                <property name="damsasp:contractNumber">
+                    <title>Contract Number</title>
+                    <type>d:text</type>
+                </property>
+                <property name="damsasp:folderName">
+                    <title>Folder Name</title>
+                    <type>d:text</type>
+                </property>
+                <property name="damsasp:procurementNumber">
+                    <title>Procurement Number</title>
+                    <type>d:text</type>
+                </property>
+	        </properties>
+	    </aspect>
+
+
+		<aspect name="damsasp:externalDocument">
+			<title>External Document</title>
+	        <properties>
+	            <property name="damsasp:extDocSource">
+	                <title>Document Source</title>
+	                <type>d:text</type>
+	                <mandatory>true</mandatory>
+	                <index enabled="true">
+	                    <tokenised>TRUE</tokenised>
+	                    <facetable>false</facetable>
+	                </index>
+	                <constraints>
+	                    <constraint ref="damsasp:extDocSourceList" />
+	                </constraints>
+	          	</property>
+	          	<property name="damsasp:extDocId">
+	   		        <title>Source Document ID</title>
+	       		    <type>d:text</type>
+	           		<mandatory>false</mandatory>
+	           		<index enabled="true">
+	               		<tokenised>TRUE</tokenised>
+	               		<facetable>false</facetable>
+	           		</index>
+				</property>
+	            <property name="damsasp:extDocVersion">
+	                <title>Version Number</title>
+	                <type>d:text</type>
+	                <index enabled="true">
+	                   <tokenised>TRUE</tokenised>
+	                   <facetable>false</facetable>
+	                </index>
+	            </property>
+	        </properties>
+	        <associations/>
+	        <overrides/>
+	        <mandatory-aspects/>
+	    </aspect>
+	    
+	    <aspect name="damsasp:adHoc">
+	    	<title>Ad Hoc Values</title>
+	    	<properties>
+	    		<property name="damsasp:adHocValue">
+	    			<type>d:text</type>
+	    		</property>
+	    	</properties>
+	    </aspect>
+	    
+    </aspects>
+</model>

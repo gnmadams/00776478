@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.alfresco.org/model/dictionary/1.0" name="gnmaRoot:contentModel">
+   <!-- Optional meta-data about the model -->
+   <description>Content model for GNMA DAMS</description>
+   <author>Shawn Bonham</author>
+   <version>1.0</version>
+   <imports>
+      <!-- Import Alfresco Dictionary Definitions -->
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+      <!-- Import Alfresco Content Domain Model Definitions -->
+      <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+      <!-- Import Alfresco System Model Definitions -->
+      <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys" />
+   </imports>
+   <!-- Custom namespace for the GNMA -->
+   <namespaces>
+      <namespace uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot" />
+   </namespaces>
+   <constraints>
+   </constraints>
+   <types>
+      <!--
+            GNMA Enterprise-wide Document root type.
+            All other custom document types would extend this one.
+        -->
+      <type name="gnmaRoot:document">
+         <title>GNMA Document</title>
+         <parent>cm:content</parent>
+         <properties>
+           
+         </properties>
+         <mandatory-aspects>
+           <aspect>cm:versionable</aspect>
+        </mandatory-aspects>
+      </type>
+   </types>
+   <aspects>
+   </aspects> 
+</model>

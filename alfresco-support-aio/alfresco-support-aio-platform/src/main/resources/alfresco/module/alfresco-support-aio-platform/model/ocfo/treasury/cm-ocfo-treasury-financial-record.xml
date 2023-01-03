@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="tfr:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/tfr/1.0" prefix="tfr"/>
+    </namespaces>
+
+    <types>
+        <type name="tfr:treasuryFinancialRecord">
+            <title>OCFO Treasury Financial Record</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="tfr:subtype">
+                    <title>Treasury Financial Record Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="tfr:cashReceiptId">
+                    <title>Cash Receipt ID</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="tfr:contractId">
+                    <title>Contract ID</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="tfr:voucherId">
+                    <title>Voucher ID</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="tfr:vendorName">
+                    <title>Vendor Name</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="tfr:vendorId">
+                    <title>Vendor ID</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="tfr:accountingDate">
+                    <title>Accounting Date</title>
+                    <type>d:date</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="tfr:cashReceiptVoucher">
+            <title>OCFO Treasury Cash Receipt Voucher</title>
+            <parent>tfr:treasuryFinancialRecord</parent>
+            <overrides>
+                <property name="tfr:subtype">
+                    <default>Cash Receipts Vouchers (CRVs)</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="tfr:disbursementVoucherGSAContract">
+            <title>OCFO Treasury Disbursement Voucher GSA Contract</title>
+            <parent>tfr:treasuryFinancialRecord</parent>
+            <overrides>
+                <property name="tfr:subtype">
+                    <default>Disbursement Voucher GSA Contract</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="tfr:disbursementVoucherNonGSAContract">
+            <title>OCFO Treasury Disbursement Voucher Non-GSA Contract</title>
+            <parent>tfr:treasuryFinancialRecord</parent>
+            <overrides>
+                <property name="tfr:subtype">
+                    <default>Disbursement Voucher Non-GSA Contract</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="tfr:disbursementVoucherMiscellaneous">
+            <title>OCFO Treasury Disbursement Voucher Miscellaneous</title>
+            <parent>tfr:treasuryFinancialRecord</parent>
+            <overrides>
+                <property name="tfr:subtype">
+                    <default>Disbursement Voucher Miscellaneous</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+<!--  
+    <aspects>
+
+	</aspects> 
+-->
+</model>

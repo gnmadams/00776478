@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="amdtrng:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/amdtrng/1.0" prefix="amdtrng"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="amdtrng:statusCIPList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+			<value>Complete</value>
+			<value>Incomplete</value>
+			<value>Pending</value>
+            </list>
+         </parameter>
+      </constraint>
+      <constraint name="amdtrng:statusCIList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+			<value>Complete</value>
+			<value>Incomplete</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+
+    <types>
+        <type name="amdtrng:trainingDocument">
+            <title>OMO Administration Management Division Training Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="amdtrng:subtype">
+                    <title>Training Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="amdtrng:employeeFirstName">
+                    <title>Employee First Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdtrng:employeeLastName">
+                    <title>Employee Last Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdtrng:fiscalYear">
+                    <title>Fiscal Year</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdtrng:status">
+                    <title>Status</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="amdtrng:statusCIPList" />
+               	    </constraints>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="amdtrng:mandatoryInCompass">
+            <title>OMO Administration Management Division Training Mandatory (InCompass)</title>
+            <parent>amdtrng:trainingDocument</parent>
+            <overrides>
+                <property name="amdtrng:subtype">
+                    <default>Mandatory (InCompass)</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdtrng:continuingEducation">
+            <title>OMO Administration Management Division Training Continuing Education</title>
+            <parent>amdtrng:trainingDocument</parent>
+            <overrides>
+                <property name="amdtrng:subtype">
+                    <default>Continuing Education</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdtrng:certifications">
+            <title>OMO Administration Management Division Training Certifications</title>
+            <parent>amdtrng:trainingDocument</parent>
+            <overrides>
+                <property name="amdtrng:subtype">
+                        <default>Certifications</default>
+                </property>
+                <property name="amdtrng:status">
+		            <constraints>
+		               <constraint ref="amdtrng:statusCIList" />
+		           	</constraints>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdtrng:leadershipDevelopment">
+            <title>OMO Administration Management Division Training Leadership Development</title>
+            <parent>amdtrng:trainingDocument</parent>
+            <overrides>
+                <property name="amdtrng:subtype">
+                    <default>Leadership Development</default>
+                </property>
+                 <property name="amdtrng:status">
+		            <constraints>
+		               <constraint ref="amdtrng:statusCIList" />
+		           	</constraints>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+</model>

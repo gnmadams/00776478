@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="ccwf:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/ccwf/1.0" prefix="ccwf"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="ccwf:docStatusList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+	            <value />
+				<value>Inactive</value>
+				<value>Active</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="ccwf:CorContractWorkingFiles">
+            <title>OMO PMD COR Contract Working Files</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="ccwf:subtype">
+                    <title>COR Contract Working Files Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="ccwf:contractNumber">
+                    <title>Contract Number</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="ccwf:contractFileName">
+                    <title>Contract File Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="ccwf:contractorName">
+                    <title>Contractor Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="ccwf:subContractorName">
+                    <title>Sub-Contractor Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="ccwf:documentStatus">
+                    <title>Document Status</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="ccwf:docStatusList" />
+               	    </constraints>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="ccwf:preAwardDocument">
+            <title>OMO PMD Pre-Award Document</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Pre-Award Documents</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="ccwf:solicitationDocument">
+            <title>OMO PMD Solicitation Document</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Solicitation Documents</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="ccwf:awardDocument">
+            <title>OMO PMD Award Document</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Award Documents</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="ccwf:administrationDocument">
+            <title>OMO PMD Administration Document</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Administration Documents</default>
+                </property>
+            </overrides>
+        </type>
+        
+        <type name="ccwf:invoice">
+            <title>OMO PMD Invoice</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Invoices</default>
+                </property>
+            </overrides>
+        </type>
+        
+        <type name="ccwf:modDeliveryOrderTask">
+            <title>OMO PMD Modification/Delivery Order/Task</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Modifications/Delivery Orders/Tasks</default>
+                </property>
+            </overrides>
+        </type>
+        
+        <type name="ccwf:closeOut">
+            <title>OMO PMD Close-Out</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Close-Out</default>
+                </property>
+            </overrides>
+        </type>
+        
+        <type name="ccwf:ratification">
+            <title>OMO PMD Ratification</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Ratification</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="ccwf:postAwardDocument">
+            <title>OMO PMD Post-Award Document</title>
+            <parent>ccwf:CorContractWorkingFiles</parent>
+            <overrides>
+                <property name="ccwf:subtype">
+                    <default>Post-Award Documents</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+<!--  
+    <aspects>
+
+	</aspects> 
+-->
+</model>

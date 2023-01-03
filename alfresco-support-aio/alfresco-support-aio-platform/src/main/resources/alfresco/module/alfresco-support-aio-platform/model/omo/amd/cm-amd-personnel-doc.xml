@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="amdp:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/amdp/1.0" prefix="amdp"/>
+    </namespaces>
+
+    <types>
+        <type name="amdp:personnelDocument">
+            <title>OMO Administration Management Division Personnel Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="amdp:subtype">
+                    <title>Personnel Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="amdp:employeeFirstName">
+                    <title>Employee First Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdp:employeeLastName">
+                    <title>Employee Last Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdp:action">
+                    <title>Action</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="amdp:awards">
+            <title>OMO Administration Management Division Personnel Awards</title>
+            <parent>amdp:personnelDocument</parent>
+            <overrides>
+                <property name="amdp:subtype">
+                    <default>Awards</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdp:promotions">
+            <title>OMO Administration Management Division Personnel Promotions</title>
+            <parent>amdp:personnelDocument</parent>
+            <overrides>
+                <property name="amdp:subtype">
+                    <default>Promotions</default>
+                </property>
+            </overrides>
+        </type>
+        
+        <type name="amdp:details">
+            <title>OMO Administration Management Division Personnel Details</title>
+            <parent>amdp:personnelDocument</parent>
+            <overrides>
+                <property name="amdp:subtype">
+                    <default>Details</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdp:reassignments">
+            <title>OMO Administration Management Division Personnel Reassignments</title>
+            <parent>amdp:personnelDocument</parent>
+            <overrides>
+                <property name="amdp:subtype">
+                    <default>Reassignments</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdp:disciplinaryActions">
+            <title>OMO Administration Management Division Personnel Disciplinary Actions</title>
+            <parent>amdp:personnelDocument</parent>
+            <overrides>
+                <property name="amdp:subtype">
+                    <default>Disciplinary Actions</default>
+                </property>
+            </overrides>
+        </type>
+
+
+    </types>
+
+</model>

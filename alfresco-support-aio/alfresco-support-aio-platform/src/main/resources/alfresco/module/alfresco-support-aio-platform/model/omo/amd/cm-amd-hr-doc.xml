@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="amdhr:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Cyrus Munshi</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/amdhr/1.0" prefix="amdhr"/>
+    </namespaces>
+
+    <types>
+        <type name="amdhr:hrDocument">
+            <title>OMO Administration Management Division HR Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="amdhr:subtype">
+                    <title>HR Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="amdhr:employeeFirstName">
+                    <title>Employee First Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdhr:employeeLastName">
+                    <title>Employee Last Name</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="amdhr:action">
+                    <title>Action</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="amdhr:separations">
+            <title>OMO Administration Management Division HR Separations</title>
+            <parent>amdhr:hrDocument</parent>
+            <overrides>
+                <property name="amdhr:subtype">
+                    <default>Separations</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="amdhr:performance">
+            <title>OMO Administration Management Division HR Performance</title>
+            <parent>amdhr:hrDocument</parent>
+            <properties>
+                <property name="amdhr:fiscalYear">
+                    <title>Fiscal Year</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+            <overrides>
+                <property name="amdhr:subtype">
+                    <default>Performance</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+</model>

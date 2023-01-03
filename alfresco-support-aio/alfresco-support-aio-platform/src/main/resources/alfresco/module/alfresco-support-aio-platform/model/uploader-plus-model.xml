@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="dup:UploaderPlus" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <description>Content model for the Uploader-Plus Plugin for GinnieMae-DAMS ShareUI
+    </description>
+    <author>GRAY, LAMON</author>
+    <published>2021-06-22</published>
+    <version>0.0.9</version>
+
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+    </imports>
+
+    <namespaces>
+        <namespace uri="https://ginniemae.org/uploaderplus/uploader-plus/model/1.0" prefix="dup"/>
+    </namespaces>
+
+    <aspects>
+        <aspect name="dup:UploadFolder">
+            <title>Upload folder</title>
+            <properties>
+                <property name="dup:allowedTypes">
+                    <title>Allowed types</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>false</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
+        
+   <!--      <aspect name="dup:UploadFolder">
+            <title>Upload folder</title>
+            <properties>
+                <property name="dup:allowedTypes">
+                    <title>Allowed types</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>true</multiple>
+                    <index enabled="true">
+                        <atomic>true</atomic>
+                        <stored>false</stored>
+                        <tokenised>false</tokenised>
+                    </index>
+                </property>
+            </properties>
+        </aspect>
+-->        
+    </aspects>
+
+</model>

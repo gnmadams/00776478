@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="td:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/td/1.0" prefix="td"/>
+    </namespaces>
+
+    <types>
+        <type name="td:treasuryDocument">
+            <title>OCFO Treasury Documents</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="td:subtype">
+                    <title>Treasury Document Subtype</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>true</tokenised>
+                        <facetable>true</facetable>
+                    </index>
+                </property>
+                <property name="td:voucherId">
+                    <title>Voucher ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:invoiceId">
+                    <title>Invoice ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:fiscalYear">
+                    <title>Fiscal Year</title>
+                    <type>d:int</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:accountingPeriod">
+                    <title>Accounting Period</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:vendorSupplierId">
+                    <title>Vendor/Supplier ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:businessUnit">
+                    <title>Business Unit</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:journalId">
+                    <title>Journal ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:journalDate">
+                    <title>Journal Date</title>
+                    <type>d:date</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:referenceId">
+                    <title>Reference ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:requisitionId">
+                    <title>Requisition ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:cashReceiptId">
+                    <title>Cash Receipt ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:customerId">
+                    <title>Customer ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:purchaseOrderId">
+                    <title>Purchase Order ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:contractId">
+                    <title>Contract ID</title>
+                    <type>d:text</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:popFromDate">
+                    <title>Period of Performance From Date</title>
+                    <type>d:date</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:popToDate">
+                    <title>Period of Performance To Date</title>
+                    <type>d:date</type>
+	                <mandatory>true</mandatory>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:apprStatus">
+                    <title>APPR_STATUS</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:beaCat">
+                    <title>BEA Cat</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:fund">
+                    <title>Fund</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:boc">
+                    <title>BOC</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:programCode">
+                    <title>Program Code</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:budgetRef">
+                    <title>Budget Reference</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:activityType">
+                    <title>Activity Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:transactionPartner">
+                    <title>Transaction Partner</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:tradingPartner">
+                    <title>Trading Partner</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:department">
+                    <title>Department</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:operatingAccountant">
+                    <title>Operating Accountant</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+                <property name="td:jeStatus">
+                    <title>JE_STATUS</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>TRUE</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                </property>
+            </properties>
+        </type>
+        
+        
+        <type name="td:treasuryDisbursementVoucher">
+            <title>OCFO Treasury Disbursement Voucher</title>
+            <parent>td:treasuryDocument</parent>
+            <overrides>
+                <property name="td:subtype">
+                    <default>Disbursement Voucher</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="td:glJournal">
+            <title>OCFO Treasury GL Journal</title>
+            <parent>td:treasuryDocument</parent>
+            <overrides>
+                <property name="td:subtype">
+                    <default>GL Journal</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="td:requisitions">
+            <title>OCFO Treasury Requisitions</title>
+            <parent>td:treasuryDocument</parent>
+            <overrides>
+                <property name="td:subtype">
+                    <default>Requisitions</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="td:cashReceiptVoucher">
+            <title>OCFO Treasury Cash Receipt Voucher</title>
+            <parent>td:treasuryDocument</parent>
+            <overrides>
+                <property name="td:subtype">
+                    <default>Cash Receipt Voucher</default>
+                </property>
+            </overrides>
+        </type>
+
+        <type name="td:posContractsMods">
+            <title>OCFO Treasury Purchase Orders, Contracts, Modifications</title>
+            <parent>td:treasuryDocument</parent>
+            <overrides>
+                <property name="td:subtype">
+                    <default>Purchase Orders, Contracts, Modifications</default>
+                </property>
+            </overrides>
+        </type>
+        
+    </types>
+
+<!--  
+    <aspects>
+
+	</aspects> 
+-->
+</model>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="apm:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Shawn Bonham</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        
+         <!-- Import Root GNMA Model -->
+        <import uri="http://www.ginniemae.org/model/content/gnmaRoot/1.0" prefix="gnmaRoot"/>
+    </imports>
+
+    <!-- Custom namespace for the GNMA -->
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/apm/1.0" prefix="apm"/>
+    </namespaces>
+
+    <types>
+        <type name="apm:ALL_PARTICIPANT_MEMOS">
+            <title>All Participant Memos</title>
+            <parent>gnmaRoot:document</parent>
+            <properties>
+                <property name="apm:apmNumber">
+                    <title>APM Number</title>
+                    <type>d:text</type>
+	                <index enabled="true">
+	                    <tokenised>TRUE</tokenised>
+	                    <facetable>false</facetable>
+	                </index>
+                </property>
+                <property name="apm:apmYear">
+                    <title>APM Year</title>
+                    <type>d:text</type>
+	                <index enabled="true">
+	                    <tokenised>TRUE</tokenised>
+	                    <facetable>false</facetable>
+	                </index>
+                </property>
+            </properties>
+        </type>
+    </types>
+    
+	<aspects>
+      <aspect name="apm:edrmApmDocument">
+         <title>EDRM APM Document</title>
+         <properties>
+            <property name="apm:beginningBatesNumber">
+                <title>Beginning Bates Number</title>
+                <type>d:text</type>
+            </property>
+            <property name="apm:endingBatesNumber">
+                <title>Ending Bates Number</title>
+                <type>d:text</type>
+            </property>
+            <property name="apm:startImage">
+                <title>Start Image</title>
+                <type>d:text</type>
+            </property>
+            <property name="apm:endImage">
+                <title>End Image</title>
+                <type>d:text</type>
+            </property>
+            <property name="apm:boxSequence">
+               <title>Box Sequence</title>
+               <type>d:text</type>
+            </property>
+            <property name="apm:documentType">
+               <title>Document Type</title>
+               <type>d:text</type>
+            </property>
+         </properties>
+      </aspect>
+   </aspects>
+
+</model>

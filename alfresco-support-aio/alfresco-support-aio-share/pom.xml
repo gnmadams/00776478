@@ -25,6 +25,12 @@
             <artifactId>share</artifactId>
             <classifier>classes</classifier>
         </dependency>
+        <dependency>
+		  <groupId>org.alfresco</groupId>
+		  <artifactId>alfresco-outlook-share</artifactId>
+		  <version>2.9.0</version>
+		  <type>amp</type>
+		</dependency>
     </dependencies>
 
     <build>

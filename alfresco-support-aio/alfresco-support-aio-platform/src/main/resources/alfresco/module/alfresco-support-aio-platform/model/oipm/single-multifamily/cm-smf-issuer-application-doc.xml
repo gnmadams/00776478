@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="smfissrapp:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Content model for GNMA DAMS</description>
+    <author>Tauqir Rajput</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+        
+        <import uri="http://www.ginniemae.org/model/content/oipmroot/1.0" prefix="oipmroot"/>
+        
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.ginniemae.org/model/content/smfissrapp/1.0" prefix="smfissrapp"/>
+    </namespaces>
+
+   <constraints>
+      <constraint name="smfissrapp:subContentTypeList" type="LIST">
+         <parameter name="allowedValues">
+            <list>
+               <value />
+               <!-- Empty for default search-->
+				<value>Applicant’s Anti-Discrimination Policies</value>
+				<value>Applicant’s Most Recent Fannie Mae and Freddie Mac Field Review</value>
+				<value>Applicant’s Most Recent Field Review by FHA, VA, and_or RD</value>
+				<value>Applicant’s Originating and Servicing Experience Related to Fannie Mae</value>
+				<value>Applicant’s Originating and Servicing Experience Related to FHA, VA, PIH, and_or RD</value>
+				<value>Applicant’s Originating and Servicing Experience Related to Freddie Mac</value>
+				<value>Applicant’s Plans for Servicing Ginnie Mae Pooled Loans</value>
+				<value>Application for Approval Ginnie Mae Mortgage-Backed Securities Issuer</value>
+				<value>Application Payment Receipt</value>
+				<value>Audited Financial Statements</value>
+				<value>Contact Information for Mortgage Insurance Companies, Warehouse Lenders, and Investors with Whom the Applicant Is Currently Doing Business</value>
+				<value>Cross Default Agreement</value>
+				<value>Current Servicing Portfolio Statistics</value>
+				<value>Detailed Servicing Experience of the Organization and Employee(s)</value>
+				<value>Document Custodian Historical Files</value>
+				<value>Dollar Value of Any Pledged Assets or Related Party Transactions</value>
+				<value>Dollar Value of Loans to Officers_Directors_Affiliates</value>
+				<value>Evidence of Policies and Procedures for Secondary Marketing and Capital Markets</value>
+				<value>Evidence of Quality Control Report for Underwriting_Origination and Servicing_Subservicer Oversight</value>
+				<value>Intended Activities with Ginnie Mae</value>
+				<value>Interim Financial Statements</value>
+				<value>License of Audit Firm</value>
+				<value>List of All Business Lines the Applicant is Involved in and Any Other Noteworthy Industry or Business Relationships</value>
+				<value>List of All Loan Types That Are Originated and_or Serviced by the Applicant</value>
+				<value>List of States the Applicant is Currently Licensed</value>
+				<value>Loan Production Breakdown</value>
+				<value>Narrative of the Applicant’s Securitized Mortgage Activity</value>
+				<value>Officer(s) and Employee(s) Information</value>
+				<value>Officer(s) and Employee(s) Resumes</value>
+				<value>Quality Control Plans for Underwriting_Origination and Servicing_Subservicer Oversight</value>
+				<value>Resolution of Board of Directors and Certificate of Authorized Signatures</value>
+				<value>Servicing Experience Detail Worksheet</value>
+				<value>Statement Describing the Applicant’s Board of Directors</value>
+            </list>
+         </parameter>
+      </constraint>
+   </constraints>
+
+    <types>
+        <type name="smfissrapp:smfIssuerApplicationDocuments">
+            <title>OIPM Single-Multifamily Issuer Application Documents</title>
+            <parent>oipmroot:oipmRoot</parent>
+            <properties>
+                <property name="smfissrapp:subtype">
+                    <title>Sub Content Type</title>
+                    <type>d:text</type>
+                    <index enabled="true">
+                        <tokenised>false</tokenised>
+                        <facetable>false</facetable>
+                    </index>
+                    <constraints>
+                  		<constraint ref="smfissrapp:subContentTypeList" />
+               		</constraints>
+                </property>
+            </properties>
+        </type>
+    </types>
+</model>

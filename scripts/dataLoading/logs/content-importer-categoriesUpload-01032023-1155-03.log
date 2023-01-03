@@ -1,0 +1,404 @@
+01/03/23 11:55:03 INFO  - 351  - App.displayAndLog: ========================== Processing categoriesUpload ============================
+01/03/23 11:55:03 INFO  - 357  - App.logArguments: Setting org.gnma.dams.content_importer package verbosity to TRACE.
+01/03/23 11:55:03 INFO  - 359  - App.logArguments: Initializing update to alfresco intance (http://localhost:8080) as admin.
+01/03/23 11:55:03 DEBUG - 360  - App.logArguments: file=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\categories.csv
+01/03/23 11:55:03 DEBUG - 361  - App.logArguments: host=http://localhost:8080
+01/03/23 11:55:03 DEBUG - 362  - App.logArguments: user=admin
+01/03/23 11:55:03 DEBUG - 363  - App.logArguments: pwort=admin
+01/03/23 11:55:03 DEBUG - 364  - App.logArguments: dataLocation=null
+01/03/23 11:55:03 DEBUG - 365  - App.logArguments: deleteSiteIfExists=false
+01/03/23 11:55:03 DEBUG - 366  - App.logArguments: action=categoriesUpload
+01/03/23 11:55:03 DEBUG - 367  - App.logArguments: verbosity=TRACE
+01/03/23 11:55:03 DEBUG - 368  - App.logArguments: uri=null
+01/03/23 11:55:03 DEBUG - 369  - App.logArguments: jsonFormat=json
+01/03/23 11:55:03 DEBUG - 370  - App.logArguments: validActions=contentUpload/categoriesUpload/userUpload/sitesUpload/foldersUpload/foldersDelete/deleteAllSites/updateServerLicense/updateClientLicense/uploadOutlookSearchSettings/listActions/jsonPost/groupsUpload/generateLdif/processLdapGroupsUsers/deleteLdap/folderPermissionsUpdate/deleteContentUploaderConfig/updateContentUploaderConfig/uploadOutlookPromptConfig/getVersion
+01/03/23 11:55:03 DEBUG - 371  - App.logArguments: rangeStr=null
+01/03/23 11:55:03 DEBUG - 372  - App.logArguments: propsFile=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\ETL.properties
+01/03/23 11:55:03 DEBUG - 373  - App.logArguments: filterStr=null
+01/03/23 11:55:03 DEBUG - 374  - App.logArguments: maxRows=999999999
+01/03/23 11:55:03 DEBUG - 375  - App.logArguments: jks=
+01/03/23 11:55:03 DEBUG - 376  - App.logArguments: jksPwort=
+01/03/23 11:55:03 DEBUG - 377  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:03 DEBUG - 378  - App.logArguments: groupsFile=null
+01/03/23 11:55:03 DEBUG - 379  - App.logArguments: usersFile=null
+01/03/23 11:55:03 DEBUG - 380  - App.logArguments: timeout=15
+01/03/23 11:55:03 DEBUG - 381  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:03 DEBUG - 35   - Config.load: Loading Properties
+01/03/23 11:55:03 DEBUG - 42   - Config.load: Loaded Properties.
+01/03/23 11:55:03 DEBUG - 59   - Config.getTransformationMap: Getting transformation Map:
+01/03/23 11:55:03 DEBUG - 91   - Config.getTransformationMap:       Processing mappings
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          siteid
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>ginnie-mae-public
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>ocm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>ginnie-mae-public
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>ocm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Procurement=>omo
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipm
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipm
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          uploaddirectory
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>Multifamily/Issuer Application Documents/Issuer Files
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>Multifamily/Formal Request/FOIA Request
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>Multifamily/OIPM Supplemental Documents/Document Custodian Files - internal GMNA file
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>Multifamily/Issuer Application Documents/Supplemental Files
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>Multifamily/Issuer Application Documents/Miscellaneous Files
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             APMs=>All Participant Memos
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Historical=>Capital Markets Historical Documents/Historical
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>Manufactured Housing/Manufactured Homes Historical Documents
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>All Participant Memos
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>Structured Solutions (REMIC)/REMIC Closing Documents/Issuance Statement
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>Multifamily/Terminated Issuer Documents (Already in EDRM)/Terminated Issuer Files
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>Multifamily/OIPM Supplemental Documents/Commitment Authority Documents - Inside of OIPM
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Procurement=>Procurement Management Division (PMD)/General Documents/Procurement Documents
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>Multifamily/Multifamily Historical Documents
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             01_Official Financial Advisor Letter=>Capital Markets Historical Documents/Official Financial Advisor Letter
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             02_Transaction Initiation Letter=>Capital Markets Historical Documents/Transaction Initiation Letter
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             03_Sponsor Agreement=>Capital Markets Historical Documents/Sponsor Agreement
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             04_Guaranty Agreement=>Capital Markets Historical Documents/Guaranty Agreement
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             05_Legal Advisor Letter=>Capital Markets Historical Documents/Legal Advisor Letter
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplement=>Capital Markets Historical Documents/Offering Circulator Supplement
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             07_Misc=>Capital Markets Historical Documents/Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>Capital Markets Historical Documents/Closing Document - Disk
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>Multifamily/Formal Request/FOIA Supplemental
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>Multifamily/Defaulted Issuers (Already in EDRM)/Default Issuer Files
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          contenttype
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>smfissrfiles:smfIssuerFiles
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>smfformreq:smfFormalRequest
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>smfissrapp:smfIssuerApplicationDocuments
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>smfissrsupp:smfIssuerSupplementalFiles
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>smfissrmisc:smfIssuerMiscFiles
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>damsBase:damsBaseDocument
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>mhdoc:mhDocuments
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Base Type=>damsBase:damsBaseDocument
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>smftermissr:smfTerminatedIssuerDocuments
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>smfsuppdoc:smfSupplementalDocuments
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Procurement=>damsBase:damsBaseDocument
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipmroot:oipmRoot
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipmroot:oipmRoot
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          gnmaRoot:documentType
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             APMs=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILE=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Commitment Authority Files=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             CONT=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Custodian File=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             Historical=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             ISSUER FILE=>07_Misc
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplemnet=>06_Offering Circulator Supplement
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document -=>08_Closing Document - Disk Historical
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             08_Closing Documenent - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILES=>07_Misc
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          overwrite
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          description
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>File coming from EDRM to DAMS
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          majorversion
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          damsasp:extDocSource
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>EDRM
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          maRoot:externalDocumentVersion
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>1.0
+01/03/23 11:55:03 DEBUG - 98   - Config.getTransformationMap:          containerid
+01/03/23 11:55:03 DEBUG - 104  - Config.getTransformationMap:             =>documentlibrary
+01/03/23 11:55:03 DEBUG - 112  - Config.getTransformationMap: Done generating transformation map.
+01/03/23 11:55:03 DEBUG - 124  - Config.getReplacementMap: Getting replacement Map:
+01/03/23 11:55:03 DEBUG - 150  - Config.getReplacementMap:       Processing mappings
+01/03/23 11:55:03 DEBUG - 153  - Config.getReplacementMap: Done generating replacement map.
+01/03/23 11:55:03 INFO  - 139  - TaxonomyServices.processCategories: Processing a Categories Upload...
+01/03/23 11:55:03 DEBUG - 71   - CSV.csvReader: Getting CSV from file.
+01/03/23 11:55:03 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 0
+01/03/23 11:55:03 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:03 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (All Participant Memos, , null).
+01/03/23 11:55:03 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category, { "name": "All Participant Memos"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 665  - TaxonomyServices.createCategory: ...... Cannot create category due to general reason. Status Code= 500
+01/03/23 11:55:04 DEBUG - 668  - TaxonomyServices.createCategory: {
+    "status" : 
+  {
+    "code" : 500,
+    "name" : "Internal Error",
+    "description" : "An error inside the HTTP server which prevented it from fulfilling the request."
+  },  
+  
+  "message" : "Server error (00030414).  Details can be found in the server logs.",  
+  "exception" : "",
+  
+  "callstack" : 
+  [
+
+  ],
+  
+  "server" : "Enterprise schema 17,000",
+  "time" : "Jan 3, 2023, 4:54:39 PM"
+}
+
+
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 1
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (OIPM, , null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category, { "name": "OIPM"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 665  - TaxonomyServices.createCategory: ...... Cannot create category due to general reason. Status Code= 500
+01/03/23 11:55:04 DEBUG - 668  - TaxonomyServices.createCategory: {
+    "status" : 
+  {
+    "code" : 500,
+    "name" : "Internal Error",
+    "description" : "An error inside the HTTP server which prevented it from fulfilling the request."
+  },  
+  
+  "message" : "Server error (00030416).  Details can be found in the server logs.",  
+  "exception" : "",
+  
+  "callstack" : 
+  [
+
+  ],
+  
+  "server" : "Enterprise schema 17,000",
+  "time" : "Jan 3, 2023, 4:54:39 PM"
+}
+
+
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 2
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Capital Markets, , null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category, { "name": "Capital Markets"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 665  - TaxonomyServices.createCategory: ...... Cannot create category due to general reason. Status Code= 500
+01/03/23 11:55:04 DEBUG - 668  - TaxonomyServices.createCategory: {
+    "status" : 
+  {
+    "code" : 500,
+    "name" : "Internal Error",
+    "description" : "An error inside the HTTP server which prevented it from fulfilling the request."
+  },  
+  
+  "message" : "Server error (00030418).  Details can be found in the server logs.",  
+  "exception" : "",
+  
+  "callstack" : 
+  [
+
+  ],
+  
+  "server" : "Enterprise schema 17,000",
+  "time" : "Jan 3, 2023, 4:54:39 PM"
+}
+
+
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 3
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (REMIC Closing Documents, Capital Markets, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "REMIC Closing Documents"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 4
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Sponsor Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Sponsor Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 5
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Standard Sponsor Provisions, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Standard Sponsor Provisions"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 6
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Offering Circular Supplement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Offering Circular Supplement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 7
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Base Offering Circular, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Base Offering Circular"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 8
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Accountants Agree-upon Procedures (Print), REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Accountants Agree-upon Procedures (Print)"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 9
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Representation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Print), REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Representation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Print)"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 10
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Trustee Receipt and Safekeeping Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Trustee Receipt and Safekeeping Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 11
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (REMIC Trust Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "REMIC Trust Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 12
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (REMIC Standard Trust Provisions, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "REMIC Standard Trust Provisions"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 13
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (MX Trust Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "MX Trust Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 14
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (MX standard Trust provisions, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "MX standard Trust provisions"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 15
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (GNMA Guaranty Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "GNMA Guaranty Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 16
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (OID Prices Letter, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "OID Prices Letter"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 17
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Transfer Affidavit relating to the Residual Securities, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Transfer Affidavit relating to the Residual Securities"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 18
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Issuance Statement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Issuance Statement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 19
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Waiver Agreement, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Waiver Agreement"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 20
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Transaction Opinion, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Transaction Opinion"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 21
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (MX Tax Opinion, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "MX Tax Opinion"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 22
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Opinion of Sponsor, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Opinion of Sponsor"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 23
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Opinion of Trustees Counsel, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Opinion of Trustees Counsel"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 24
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Opinion of HUD General Counsel, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Opinion of HUD General Counsel"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 25
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Accountants Agree-upon Procedures report (Closing), REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Accountants Agree-upon Procedures report (Closing)"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 26
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Representation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Closing), REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Representation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Closing)"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 27
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Closing Flow of Funds Instruction Letter, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Closing Flow of Funds Instruction Letter"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 28
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Glossary, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Glossary"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 29
+01/03/23 11:55:04 DEBUG - 484  - TaxonomyServices.doCategoryUpload: ......... doing category upload from csv row.
+01/03/23 11:55:04 INFO  - 628  - TaxonomyServices.createCategory: ... Creating Category (Work Group List, REMIC Closing Documents, null).
+01/03/23 11:55:04 DEBUG - 645  - TaxonomyServices.createCategory: ... Preparing to execute request (/alfresco/s/api/category/workspace/SpacesStore/null, { "name": "Work Group List"
+ }).
+01/03/23 11:55:04 DEBUG - 647  - TaxonomyServices.createCategory: ... Done executing request.
+01/03/23 11:55:04 INFO  - 662  - TaxonomyServices.createCategory: ...... Unable to create category, because category node was found or is not a category
+01/03/23 11:55:04 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 30
+01/03/23 11:55:04 DEBUG - 151  - AlfrescoServiceBase.shouldIterate:    End of CSV has been reached.
+01/03/23 11:55:04 INFO  - 351  - App.displayAndLog: Processed:30 
+Succeeded:0 
+Partially Failed:0 
+Failed:30 
+Start Time:01/03/2023 11:55:03 
+End Time:01/03/2023 11:55:04 
+Run Time: 0 days, 0 hours, 0 minutes, 1 seconds 
+Speed:0.00 second(s) per file
+01/03/23 11:55:04 INFO  - 351  - App.displayAndLog: ------------------------- Done processing action ---------------------------

@@ -1,0 +1,6 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="witgp:releaseDistributionDate"/>
+		</target>
+	 </match>
+

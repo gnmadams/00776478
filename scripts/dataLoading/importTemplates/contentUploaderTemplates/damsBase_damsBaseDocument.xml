@@ -1,0 +1,9 @@
+	 <match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="cm:title"/>
+			<property name="cm:description">
+				<ui multiline="true"/>
+			</property>
+		</target>
+	 </match>
+

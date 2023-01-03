@@ -1,0 +1,169 @@
+01/03/23 12:05:26 INFO  - 351  - App.displayAndLog: ========================== Processing jsonPost ============================
+01/03/23 12:05:26 INFO  - 357  - App.logArguments: Setting org.gnma.dams.content_importer package verbosity to TRACE.
+01/03/23 12:05:26 INFO  - 359  - App.logArguments: Initializing update to alfresco intance (http://localhost:8080) as admin.
+01/03/23 12:05:26 DEBUG - 360  - App.logArguments: file=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\outlookIntegrationConfig.txt
+01/03/23 12:05:26 DEBUG - 361  - App.logArguments: host=http://localhost:8080
+01/03/23 12:05:26 DEBUG - 362  - App.logArguments: user=admin
+01/03/23 12:05:26 DEBUG - 363  - App.logArguments: pwort=admin
+01/03/23 12:05:26 DEBUG - 364  - App.logArguments: dataLocation=null
+01/03/23 12:05:26 DEBUG - 365  - App.logArguments: deleteSiteIfExists=false
+01/03/23 12:05:26 DEBUG - 366  - App.logArguments: action=jsonPost
+01/03/23 12:05:26 DEBUG - 367  - App.logArguments: verbosity=TRACE
+01/03/23 12:05:26 DEBUG - 368  - App.logArguments: uri=/alfresco/s/wps/mail/integration/config
+01/03/23 12:05:26 DEBUG - 369  - App.logArguments: jsonFormat=json
+01/03/23 12:05:26 DEBUG - 370  - App.logArguments: validActions=contentUpload/categoriesUpload/userUpload/sitesUpload/foldersUpload/foldersDelete/deleteAllSites/updateServerLicense/updateClientLicense/uploadOutlookSearchSettings/listActions/jsonPost/groupsUpload/generateLdif/processLdapGroupsUsers/deleteLdap/folderPermissionsUpdate/deleteContentUploaderConfig/updateContentUploaderConfig/uploadOutlookPromptConfig/getVersion
+01/03/23 12:05:26 DEBUG - 371  - App.logArguments: rangeStr=null
+01/03/23 12:05:26 DEBUG - 372  - App.logArguments: propsFile=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\ETL.properties
+01/03/23 12:05:26 DEBUG - 373  - App.logArguments: filterStr=null
+01/03/23 12:05:26 DEBUG - 374  - App.logArguments: maxRows=999999999
+01/03/23 12:05:26 DEBUG - 375  - App.logArguments: jks=
+01/03/23 12:05:26 DEBUG - 376  - App.logArguments: jksPwort=
+01/03/23 12:05:26 DEBUG - 377  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 12:05:26 DEBUG - 378  - App.logArguments: groupsFile=null
+01/03/23 12:05:26 DEBUG - 379  - App.logArguments: usersFile=null
+01/03/23 12:05:26 DEBUG - 380  - App.logArguments: timeout=15
+01/03/23 12:05:26 DEBUG - 381  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 12:05:26 DEBUG - 35   - Config.load: Loading Properties
+01/03/23 12:05:26 DEBUG - 42   - Config.load: Loaded Properties.
+01/03/23 12:05:26 DEBUG - 59   - Config.getTransformationMap: Getting transformation Map:
+01/03/23 12:05:26 DEBUG - 91   - Config.getTransformationMap:       Processing mappings
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          siteid
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>ginnie-mae-public
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>ocm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>ginnie-mae-public
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>ocm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Procurement=>omo
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipm
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipm
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          uploaddirectory
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>Multifamily/Issuer Application Documents/Issuer Files
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>Multifamily/Formal Request/FOIA Request
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>Multifamily/OIPM Supplemental Documents/Document Custodian Files - internal GMNA file
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>Multifamily/Issuer Application Documents/Supplemental Files
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>Multifamily/Issuer Application Documents/Miscellaneous Files
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             APMs=>All Participant Memos
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Historical=>Capital Markets Historical Documents/Historical
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>Manufactured Housing/Manufactured Homes Historical Documents
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>All Participant Memos
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>Structured Solutions (REMIC)/REMIC Closing Documents/Issuance Statement
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>Multifamily/Terminated Issuer Documents (Already in EDRM)/Terminated Issuer Files
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>Multifamily/OIPM Supplemental Documents/Commitment Authority Documents - Inside of OIPM
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Procurement=>Procurement Management Division (PMD)/General Documents/Procurement Documents
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>Multifamily/Multifamily Historical Documents
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             01_Official Financial Advisor Letter=>Capital Markets Historical Documents/Official Financial Advisor Letter
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             02_Transaction Initiation Letter=>Capital Markets Historical Documents/Transaction Initiation Letter
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             03_Sponsor Agreement=>Capital Markets Historical Documents/Sponsor Agreement
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             04_Guaranty Agreement=>Capital Markets Historical Documents/Guaranty Agreement
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             05_Legal Advisor Letter=>Capital Markets Historical Documents/Legal Advisor Letter
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplement=>Capital Markets Historical Documents/Offering Circulator Supplement
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             07_Misc=>Capital Markets Historical Documents/Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>Capital Markets Historical Documents/Closing Document - Disk
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>Multifamily/Formal Request/FOIA Supplemental
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>Multifamily/Defaulted Issuers (Already in EDRM)/Default Issuer Files
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          contenttype
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>smfissrfiles:smfIssuerFiles
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>smfformreq:smfFormalRequest
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>smfissrapp:smfIssuerApplicationDocuments
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>smfissrsupp:smfIssuerSupplementalFiles
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>smfissrmisc:smfIssuerMiscFiles
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>damsBase:damsBaseDocument
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>mhdoc:mhDocuments
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Base Type=>damsBase:damsBaseDocument
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>smftermissr:smfTerminatedIssuerDocuments
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>smfsuppdoc:smfSupplementalDocuments
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Procurement=>damsBase:damsBaseDocument
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipmroot:oipmRoot
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipmroot:oipmRoot
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          gnmaRoot:documentType
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             APMs=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILE=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Commitment Authority Files=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             CONT=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Custodian File=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             Historical=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             ISSUER FILE=>07_Misc
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplemnet=>06_Offering Circulator Supplement
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>08_Closing Document - Disk Historical
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document -=>08_Closing Document - Disk Historical
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             08_Closing Documenent - Disk=>08_Closing Document - Disk Historical
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILES=>07_Misc
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          overwrite
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          description
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>File coming from EDRM to DAMS
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          majorversion
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          damsasp:extDocSource
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>EDRM
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          maRoot:externalDocumentVersion
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>1.0
+01/03/23 12:05:26 DEBUG - 98   - Config.getTransformationMap:          containerid
+01/03/23 12:05:26 DEBUG - 104  - Config.getTransformationMap:             =>documentlibrary
+01/03/23 12:05:26 DEBUG - 112  - Config.getTransformationMap: Done generating transformation map.
+01/03/23 12:05:26 DEBUG - 124  - Config.getReplacementMap: Getting replacement Map:
+01/03/23 12:05:26 DEBUG - 150  - Config.getReplacementMap:       Processing mappings
+01/03/23 12:05:26 DEBUG - 153  - Config.getReplacementMap: Done generating replacement map.
+01/03/23 12:05:26 INFO  - 98   - HttpServices.processJsonPost: ......... Processing JSON post. Posting to: http://localhost:8080/alfresco/s/wps/mail/integration/config
+01/03/23 12:05:26 DEBUG - 167  - HttpServices.getJsonFromFile: Getting JSON from file.
+01/03/23 12:05:26 DEBUG - 171  - HttpServices.getJsonFromFile: {
+"strategies":
+	[
+		{
+			"name": "none"
+		},
+		{
+			"name": "repository"
+		},
+		{
+			"selected": true,
+			"name": "site"
+		}
+	],
+	"displaySiteStrategies":
+	[
+		{
+			"name": "allPublic"
+		},
+		{
+			"selected": true,
+			"name": "mySites"
+		},
+		{
+			"name": "favouriteSites"
+		}
+	],
+"checkStrategy": "site",
+"currentDisplaySiteStrategy": "mySites",
+
+"clientSettingsCentralConfigEnabled": true,
+"clientSettingsAllowOverride": true,
+"clientSettingsCentralConfigValue": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<settings>\n\t<outlook format=\"1.0\" dragPrio=\"0\" showExplorer=\"true\" showExplorerNew=\"true\" defaultBrowser=\"true\" visibleSites=\"private\" visibleNodes=\"default\" isSitesRoot=\"true\" mailNameDisplayPattern=\"#subject (#from)\" culture=\"en\" customAppTitle=\"DAMS\" sendLinkUrl=\"details\" folderSort=\"modified_desc\" panelViewMode=\"list\" searchMode=\"standard\" dateSortView=\"datetime\" showEmailTooltip=\"true\" showMySites=\"true\" customRibbonTitle=\"DAMS\" customMenuTitle=\"DAMS\">\n\n\t\t<storage archiveOption=\"0\" storeFiles=\"true\" storeLink=\"false\" storeMsg=\"false\" compress=\"true\" alwaysUseDefaultSendAndArchiveFolder=\"false\"  defaultSendAndArchiveFolder=\"\"\/>\n\n\t\t<!-- webApp: alfresco = 1, share = 2 -->\n\t\t<connection shareUrl=\"share\" alfrescoUrl=\"alfresco\" authentication=\"basic\" webApp=\"2\" shareAlterUrl=\"\" checkCertificate=\"true\" checkVersion=\"true\" settingsCheckInterval=\"480\" samlFallbackTimeout=\"7\" writeStreamBuffering=\"false\"\/>\n\n\t\t<feature highlightTexts=\"false\" collapsible=\"true\" tokenAlterMode=\"false\" saml=\"false\" enableWFTab=\"false\" useFilenameOnUploadMsg=\"false\" useFilenameOnRenderMsg=\"false\" enableWPF=\"true\" \/>\n\n\t\t<!-- maxFileSize: in kilobytes. Default value is \"0\". -->\n\t\t<!-- minLevel: supported values - debug, info, warning, error. Default value is \"info\". -->\n\t\t<logging maxFileSize=\"0\" minLevel=\"info\" logWebData=\"false\" \/>\n\n\t\t<restrictions>\n\t\t\t<actions>\n\t\t\t\t<action type=\"new-folder\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"new-document\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"edit\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"rename-document\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"rename-folder\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"delete\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"send-content\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"send-link\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"set-favorite\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"workflow\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"details-msg\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"details\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"download-pdf\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"download\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"import-msg\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"browse\" enabled=\"true\" enabledForMsOffice=\"false\"\/>\n\t\t\t\t<action type=\"set-metadata\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"search-full-text\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"search-metadata\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"search-sites\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"cancel-checkout\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"checkout\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"version-history\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"copy-document\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"move-document\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"copy-folder\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"move-folder\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"upload-drop-folder\" enabled=\"true\"\/>\n\t\t\t\t<action type=\"preview\" enabled=\"true\" \/>\n\t\t\t\t<action type=\"send-and-archive\" enabled=\"true\"\/>\n\t\t\t<\/actions>\n\t\t\t<tabs>\n\t\t\t\t<tab type=\"workflow\" enabled=\"false\" \/>\n\t\t\t<\/tabs>\n\t\t<\/restrictions>\n\n\t\t<search-properties>\n\t\t\t<search-property>\n\t\t\t\t<name>cm:name<\/name>\n\t\t\t\t<label-en>Name<\/label-en>\n\t\t\t\t<label-de>Name<\/label-de>\n\t\t\t\t<label-es>Nombre<\/label-es>\n\t\t\t\t<label-it>Nome<\/label-it>\n\t\t\t\t<label-fr>Nom<\/label-fr>\n\t\t\t\t<label-ja>\u540d\u524d<\/label-ja>\n\t\t\t\t<label-ru>\u0418\u043c\u044f<\/label-ru>\n\t\t\t\t<label-zh-cn>\u540d\u79f0<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Nome<\/label-pt-br>\n\t\t\t\t<label-nl>Naam<\/label-nl>\n\t\t\t\t<label-nb-no>Navn<\/label-nb-no>\n\t\t\t\t<label-cs>N\u00e1zev<\/label-cs>\n\t\t\t\t<label-pl>Nazwa<\/label-pl>\n\t\t\t\t<label-sv>Namn<\/label-sv>\n\t\t\t\t<label-da>Navn<\/label-da>\n\t\t\t\t<label-fi>Nimi<\/label-fi>\n\t\t\t\t<type>string<\/type>\n\t\t\t<\/search-property>\n\t\t\t<search-property>\n\t\t\t\t<name>cm:creator<\/name>\n\t\t\t\t<label-en>Creator<\/label-en>\n\t\t\t\t<label-de>Ersteller<\/label-de>\n\t\t\t\t<label-es>Creador<\/label-es>\n\t\t\t\t<label-it>Creatore<\/label-it>\n\t\t\t\t<label-fr>Crateur<\/label-fr>\n\t\t\t\t<label-ja>\u4f5c\u6210\u8005<\/label-ja>\n\t\t\t\t<label-ru>\u0410\u0432\u0442\u043e\u0440<\/label-ru>\n\t\t\t\t<label-zh-cn>\u521b\u5efa\u4eba<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Criador<\/label-pt-br>\n\t\t\t\t<label-nl>Auteur<\/label-nl>\n\t\t\t\t<label-nb-no>Opprettet av<\/label-nb-no>\n\t\t\t\t<label-cs>Autor<\/label-cs>\n\t\t\t\t<label-pl>Tw\u00f3rca<\/label-pl>\n\t\t\t\t<label-sv>Skapad av<\/label-sv>\n\t\t\t\t<label-da>Opretter<\/label-da>\n\t\t\t\t<label-fi>Tekij\u00e4<\/label-fi>\n\t\t\t\t<type>string<\/type>\n\t\t\t<\/search-property>\n\t\t\t<search-property>\n\t\t\t\t<name>cm:created<\/name>\n\t\t\t\t<label-en>Created<\/label-en>\n\t\t\t\t<label-de>Erstellt am<\/label-de>\n\t\t\t\t<label-es>Creado<\/label-es>\n\t\t\t\t<label-it>Creato<\/label-it>\n\t\t\t\t<label-fr>\u00c9tabli<\/label-fr>\n\t\t\t\t<label-ja>\u4f5c\u6210\u65e5<\/label-ja>\n\t\t\t\t<label-ru>\u0421\u043e\u0437\u0434\u0430\u043d\u043e<\/label-ru>\n\t\t\t\t<label-zh-cn>\u5df2\u521b\u5efa<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Criado<\/label-pt-br>\n\t\t\t\t<label-nl>Aangemaakt<\/label-nl>\n\t\t\t\t<label-nb-no>Opprettet den<\/label-nb-no>\n\t\t\t\t<label-cs>Vytvo\u0159eno<\/label-cs>\n\t\t\t\t<label-pl>Utworzono<\/label-pl>\n\t\t\t\t<label-sv>Skapad<\/label-sv>\n\t\t\t\t<label-da>Oprettet<\/label-da>\n\t\t\t\t<label-fi>Luotu<\/label-fi>\n\t\t\t\t<type>daterange<\/type>\n\t\t\t<\/search-property>\n\t\t<\/search-properties>\n\t\t<explorer-search-properties>\n\t\t\t<search-property>\n\t\t\t\t<name>cm:name<\/name>\n\t\t\t\t<label-en>Name<\/label-en>\n\t\t\t\t<label-de>Name<\/label-de>\n\t\t\t\t<label-es>Nombre<\/label-es>\n\t\t\t\t<label-it>Nome<\/label-it>\n\t\t\t\t<label-fr>Nom<\/label-fr>\n\t\t\t\t<label-ja>\u540d\u524d<\/label-ja>\n\t\t\t\t<label-ru>\u0418\u043c\u044f<\/label-ru>\n\t\t\t\t<label-zh-cn>\u540d\u79f0<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Nome<\/label-pt-br>\n\t\t\t\t<label-nl>Naam<\/label-nl>\n\t\t\t\t<label-nb-no>Navn<\/label-nb-no>\n\t\t\t\t<label-cs>N\u00e1zev<\/label-cs>\n\t\t\t\t<label-pl>Nazwa<\/label-pl>\n\t\t\t\t<label-sv>Namn<\/label-sv>\n\t\t\t\t<label-da>Navn<\/label-da>\n\t\t\t\t<label-fi>Nimi<\/label-fi>\n\t\t\t\t<type>string<\/type>\n\t\t\t<\/search-property>\n\t\t\t<search-property>\n\t\t\t\t<name>cm:content<\/name>\n\t\t\t\t<label-en>Content<\/label-en>\n\t\t\t\t<label-de>Inhalt<\/label-de>\n\t\t\t\t<label-es>Contenido<\/label-es>\n\t\t\t\t<label-it>Contenuto<\/label-it>\n\t\t\t\t<label-fr>Teneur<\/label-fr>\n\t\t\t\t<label-ja>\u30b3\u30f3\u30c6\u30f3\u30c4<\/label-ja>\n\t\t\t\t<label-ru>\u0421\u043e\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u0435<\/label-ru>\n\t\t\t\t<label-zh-cn>\u5185\u5bb9<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Conte\u00fado<\/label-pt-br>\n\t\t\t\t<label-nl>Inhoud<\/label-nl>\n\t\t\t\t<label-nb-no>Innhold<\/label-nb-no>\n\t\t\t\t<label-cs>Obsah<\/label-cs>\n\t\t\t\t<label-pl>Zawarto\u015b\u0107<\/label-pl>\n\t\t\t\t<label-sv>Inneh\u00e5ll<\/label-sv>\n\t\t\t\t<label-da>Indhold<\/label-da>\n\t\t\t\t<label-fi>Sis\u00e4lt\u00f6<\/label-fi>\n\t\t\t\t<type>string<\/type>\n\t\t\t<\/search-property>\n\t\t\t<search-property>\n\t\t\t\t<name>wpsmail-v2:subject<\/name>\n\t\t\t\t<label-en>Subject<\/label-en>\n\t\t\t\t<label-de>Betreff<\/label-de>\n\t\t\t\t<label-es>Asunto<\/label-es>\n\t\t\t\t<label-it>Oggetto<\/label-it>\n\t\t\t\t<label-fr>Objet<\/label-fr>\n\t\t\t\t<label-ja>\u4ef6\u540d<\/label-ja>\n\t\t\t\t<label-ru>\u0422\u0435\u043c\u0430<\/label-ru>\n\t\t\t\t<label-zh-cn>\u4e3b\u9898<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Assunto<\/label-pt-br>\n\t\t\t\t<label-nl>Onderwerp<\/label-nl>\n\t\t\t\t<label-nb-no>Emne<\/label-nb-no>\n\t\t\t\t<label-cs>P\u0159edm\u011bt<\/label-cs>\n\t\t\t\t<label-pl>Temat<\/label-pl>\n\t\t\t\t<label-sv>\u00c4mne<\/label-sv>\n\t\t\t\t<label-da>Emne<\/label-da>\n\t\t\t\t<label-fi>Aihe<\/label-fi>\n\t\t\t\t<type>string<\/type>\n\t\t\t<\/search-property>\n\t\t\t<search-property>\n\t\t\t\t<name>wpsmail-v2:date-sent<\/name>\n\t\t\t\t<label-en>Sent<\/label-en>\n\t\t\t\t<label-de>Gesendet am<\/label-de>\n\t\t\t\t<label-es>Enviado<\/label-es>\n\t\t\t\t<label-it>Inviato<\/label-it>\n\t\t\t\t<label-fr>Envoy\u00e9<\/label-fr>\n\t\t\t\t<label-ja>\u9001\u4fe1\u6e08\u307f<\/label-ja>\n\t\t\t\t<label-ru>\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e<\/label-ru>\n\t\t\t\t<label-zh-cn>\u5df2\u53d1\u9001<\/label-zh-cn>\n\t\t\t\t<label-pt-br>Enviado<\/label-pt-br>\n\t\t\t\t<label-nl>Verstuurd<\/label-nl>\n\t\t\t\t<label-nb-no>Sendt<\/label-nb-no>\n\t\t\t\t<label-cs>Odesl\u00e1no<\/label-cs>\n\t\t\t\t<label-pl>Wys\u0142ano<\/label-pl>\n\t\t\t\t<label-sv>Skickat<\/label-sv>\n\t\t\t\t<label-da>Sendt<\/label-da>\n\t\t\t\t<label-fi>L\u00e4hetetty<\/label-fi>\n\t\t\t\t<type>daterange<\/type>\n\t\t\t<\/search-property>\n\t\t<\/explorer-search-properties>\n\t<\/outlook>\n<\/settings>\n"
+}
+01/03/23 12:05:26 INFO  - 104  - HttpServices.processJsonPost: Using JSON raw data format.
+01/03/23 12:05:26 INFO  - 124  - HttpServices.processJsonPost: ......... JSON Post succeeded.
+01/03/23 12:05:26 DEBUG - 125  - HttpServices.processJsonPost: Response:
+01/03/23 12:05:26 DEBUG - 126  - HttpServices.processJsonPost: {
+}
+
+01/03/23 12:05:26 INFO  - 351  - App.displayAndLog: Processed:1 
+Succeeded:1 
+Partially Failed:0 
+Failed:0 
+Start Time:01/03/2023 12:05:26 
+End Time:01/03/2023 12:05:26 
+Run Time: 0 days, 0 hours, 0 minutes, 0 seconds 
+Speed:0.00 second(s) per file
+01/03/23 12:05:26 INFO  - 351  - App.displayAndLog: ------------------------- Done processing action ---------------------------

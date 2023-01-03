@@ -1,0 +1,22 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="td:purchaseOrderId"/>
+			<property name="td:contractId"/>
+			<property name="td:popFromDate"/>
+			<property name="td:popToDate"/>
+			<property name="td:accountingPeriod"/>
+			<property name="td:fiscalYear"/>
+			<property name="td:businessUnit"/>
+			<property name="td:fund"/>
+			<property name="td:boc"/>
+			<property name="td:budgetRef"/>
+			<property name="td:apprStatus"/>
+			<property name="td:beaCat"/>
+			<property name="td:programCode"/>
+			<property name="td:activityType"/>
+			<property name="td:transactionPartner"/>
+			<property name="td:tradingPartner"/>
+			<property name="td:department"/>
+		</target>
+	 </match>
+

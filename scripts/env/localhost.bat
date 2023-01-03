@@ -1,0 +1,10 @@
+SET SHARE_HOST=http://localhost:8080
+SET AUTH_TYPE=ldap
+SET LDAP_PORT=10389
+SET LDAP_HOST=ldap://localhost:10389
+SET LDAP_USER="cn=admin,dc=dams,dc=ginniemae,dc=cloud"
+SET LDAP_PWORT=secret
+SET REQUEST_TIMEOUT=15
+SET FAKE_EMAIL_OVERRIDE_FLAG=
+SET AUTH_USER=admin
+SET AUTH_PW=admin

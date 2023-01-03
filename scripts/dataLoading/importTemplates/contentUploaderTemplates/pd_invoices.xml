@@ -1,0 +1,11 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="pd:invoiceNumber"/>
+			<property name="pd:taskOrderNumber"/>
+			<property name="pd:contractNumber"/>
+			<property name="pd:contractorName"/>
+			<property name="pd:optionYear"/>
+			
+		</target>
+	 </match>
+

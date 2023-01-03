@@ -1,0 +1,811 @@
+01/03/23 11:54:14 INFO  - 351  - App.displayAndLog: ========================== Processing groupsUpload ============================
+01/03/23 11:54:14 INFO  - 357  - App.logArguments: Setting org.gnma.dams.content_importer package verbosity to TRACE.
+01/03/23 11:54:14 INFO  - 359  - App.logArguments: Initializing update to alfresco intance (http://localhost:8080) as admin.
+01/03/23 11:54:14 DEBUG - 360  - App.logArguments: file=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\groups.csv
+01/03/23 11:54:14 DEBUG - 361  - App.logArguments: host=http://localhost:8080
+01/03/23 11:54:14 DEBUG - 362  - App.logArguments: user=admin
+01/03/23 11:54:14 DEBUG - 363  - App.logArguments: pwort=admin
+01/03/23 11:54:14 DEBUG - 364  - App.logArguments: dataLocation=null
+01/03/23 11:54:14 DEBUG - 365  - App.logArguments: deleteSiteIfExists=false
+01/03/23 11:54:14 DEBUG - 366  - App.logArguments: action=groupsUpload
+01/03/23 11:54:14 DEBUG - 367  - App.logArguments: verbosity=TRACE
+01/03/23 11:54:14 DEBUG - 368  - App.logArguments: uri=null
+01/03/23 11:54:14 DEBUG - 369  - App.logArguments: jsonFormat=json
+01/03/23 11:54:14 DEBUG - 370  - App.logArguments: validActions=contentUpload/categoriesUpload/userUpload/sitesUpload/foldersUpload/foldersDelete/deleteAllSites/updateServerLicense/updateClientLicense/uploadOutlookSearchSettings/listActions/jsonPost/groupsUpload/generateLdif/processLdapGroupsUsers/deleteLdap/folderPermissionsUpdate/deleteContentUploaderConfig/updateContentUploaderConfig/uploadOutlookPromptConfig/getVersion
+01/03/23 11:54:14 DEBUG - 371  - App.logArguments: rangeStr=null
+01/03/23 11:54:14 DEBUG - 372  - App.logArguments: propsFile=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\ETL.properties
+01/03/23 11:54:14 DEBUG - 373  - App.logArguments: filterStr=ldapOnly=FALSE
+01/03/23 11:54:14 DEBUG - 374  - App.logArguments: maxRows=999999999
+01/03/23 11:54:14 DEBUG - 375  - App.logArguments: jks=
+01/03/23 11:54:14 DEBUG - 376  - App.logArguments: jksPwort=
+01/03/23 11:54:14 DEBUG - 377  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:54:14 DEBUG - 378  - App.logArguments: groupsFile=null
+01/03/23 11:54:14 DEBUG - 379  - App.logArguments: usersFile=null
+01/03/23 11:54:14 DEBUG - 380  - App.logArguments: timeout=15
+01/03/23 11:54:14 DEBUG - 381  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:54:14 DEBUG - 35   - Config.load: Loading Properties
+01/03/23 11:54:14 DEBUG - 42   - Config.load: Loaded Properties.
+01/03/23 11:54:14 DEBUG - 59   - Config.getTransformationMap: Getting transformation Map:
+01/03/23 11:54:14 DEBUG - 91   - Config.getTransformationMap:       Processing mappings
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          siteid
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>ginnie-mae-public
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>ocm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>ginnie-mae-public
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>ocm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Procurement=>omo
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipm
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipm
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          uploaddirectory
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>Multifamily/Issuer Application Documents/Issuer Files
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>Multifamily/Formal Request/FOIA Request
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>Multifamily/OIPM Supplemental Documents/Document Custodian Files - internal GMNA file
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>Multifamily/Issuer Application Documents/Supplemental Files
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>Multifamily/Issuer Application Documents/Miscellaneous Files
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             APMs=>All Participant Memos
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Historical=>Capital Markets Historical Documents/Historical
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>Manufactured Housing/Manufactured Homes Historical Documents
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>All Participant Memos
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>Structured Solutions (REMIC)/REMIC Closing Documents/Issuance Statement
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>Multifamily/Terminated Issuer Documents (Already in EDRM)/Terminated Issuer Files
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>Multifamily/OIPM Supplemental Documents/Commitment Authority Documents - Inside of OIPM
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Procurement=>Procurement Management Division (PMD)/General Documents/Procurement Documents
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>Multifamily/Multifamily Historical Documents
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             01_Official Financial Advisor Letter=>Capital Markets Historical Documents/Official Financial Advisor Letter
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             02_Transaction Initiation Letter=>Capital Markets Historical Documents/Transaction Initiation Letter
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             03_Sponsor Agreement=>Capital Markets Historical Documents/Sponsor Agreement
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             04_Guaranty Agreement=>Capital Markets Historical Documents/Guaranty Agreement
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             05_Legal Advisor Letter=>Capital Markets Historical Documents/Legal Advisor Letter
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplement=>Capital Markets Historical Documents/Offering Circulator Supplement
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             07_Misc=>Capital Markets Historical Documents/Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>Capital Markets Historical Documents/Closing Document - Disk
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>Multifamily/Formal Request/FOIA Supplemental
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>Multifamily/Defaulted Issuers (Already in EDRM)/Default Issuer Files
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          contenttype
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>smfissrfiles:smfIssuerFiles
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>smfformreq:smfFormalRequest
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>smfissrapp:smfIssuerApplicationDocuments
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>smfissrsupp:smfIssuerSupplementalFiles
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>smfissrmisc:smfIssuerMiscFiles
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>damsBase:damsBaseDocument
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>mhdoc:mhDocuments
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Base Type=>damsBase:damsBaseDocument
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>smftermissr:smfTerminatedIssuerDocuments
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>smfsuppdoc:smfSupplementalDocuments
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Procurement=>damsBase:damsBaseDocument
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipmroot:oipmRoot
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipmroot:oipmRoot
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          gnmaRoot:documentType
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             APMs=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILE=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Commitment Authority Files=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             CONT=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Custodian File=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             Historical=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             ISSUER FILE=>07_Misc
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplemnet=>06_Offering Circulator Supplement
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document -=>08_Closing Document - Disk Historical
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             08_Closing Documenent - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILES=>07_Misc
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          overwrite
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          description
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>File coming from EDRM to DAMS
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          majorversion
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          damsasp:extDocSource
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>EDRM
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          maRoot:externalDocumentVersion
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>1.0
+01/03/23 11:54:14 DEBUG - 98   - Config.getTransformationMap:          containerid
+01/03/23 11:54:14 DEBUG - 104  - Config.getTransformationMap:             =>documentlibrary
+01/03/23 11:54:14 DEBUG - 112  - Config.getTransformationMap: Done generating transformation map.
+01/03/23 11:54:14 DEBUG - 124  - Config.getReplacementMap: Getting replacement Map:
+01/03/23 11:54:14 DEBUG - 150  - Config.getReplacementMap:       Processing mappings
+01/03/23 11:54:14 DEBUG - 153  - Config.getReplacementMap: Done generating replacement map.
+01/03/23 11:54:14 INFO  - 46   - GroupServices.processGroups: Processing group creation...
+01/03/23 11:54:14 DEBUG - 71   - CSV.csvReader: Getting CSV from file.
+01/03/23 11:54:14 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 0
+01/03/23 11:54:14 INFO  - 56   - GroupServices.processGroups: Processing CSV row 0
+01/03/23 11:54:14 INFO  - 75   - GroupServices.createGroup: Creating group OCM_GLOBAL_EMERGING_MARKET_CONTRIBUTOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:14 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_GLOBAL_EMERGING_MARKET_CONTRIBUTOR", "displayName":"OCM_GLOBAL_EMERGING_MARKET_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 1
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 1
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_GLOBAL_EMERGING_MARKET_CONSUMER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_GLOBAL_EMERGING_MARKET_CONSUMER", "displayName":"OCM_GLOBAL_EMERGING_MARKET_CONSUMER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 2
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 2
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_GLOBAL_EMERGING_MARKET_COLLABORATOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_GLOBAL_EMERGING_MARKET_COLLABORATOR", "displayName":"OCM_GLOBAL_EMERGING_MARKET_COLLABORATOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 3
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 3
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_GLOBAL_EMERGING_MARKET_MANAGER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_GLOBAL_EMERGING_MARKET_MANAGER", "displayName":"OCM_GLOBAL_EMERGING_MARKET_MANAGER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 4
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 4
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_STRUCTURED_SOLUTIONS_CONTRIBUTOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_STRUCTURED_SOLUTIONS_CONTRIBUTOR", "displayName":"OCM_STRUCTURED_SOLUTIONS_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 5
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 5
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_STRUCTURED_SOLUTIONS_CONSUMER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_STRUCTURED_SOLUTIONS_CONSUMER", "displayName":"OCM_STRUCTURED_SOLUTIONS_CONSUMER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 6
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 6
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_STRUCTURED_SOLUTIONS_COLLABORATOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_STRUCTURED_SOLUTIONS_COLLABORATOR", "displayName":"OCM_STRUCTURED_SOLUTIONS_COLLABORATOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 7
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 7
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_STRUCTURED_SOLUTIONS_MANAGER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_STRUCTURED_SOLUTIONS_MANAGER", "displayName":"OCM_STRUCTURED_SOLUTIONS_MANAGER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 8
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 8
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_MARKET_INTELLIGENCE_CONTRIBUTOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_MARKET_INTELLIGENCE_CONTRIBUTOR", "displayName":"OCM_MARKET_INTELLIGENCE_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 9
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 9
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_MARKET_INTELLIGENCE_COLLABORATOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_MARKET_INTELLIGENCE_COLLABORATOR", "displayName":"OCM_MARKET_INTELLIGENCE_COLLABORATOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 10
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 10
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_MARKET_INTELLIGENCE_MANAGER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_MARKET_INTELLIGENCE_MANAGER", "displayName":"OCM_MARKET_INTELLIGENCE_MANAGER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 11
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 11
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_MARKET_INTELLIGENCE_CONSUMER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_MARKET_INTELLIGENCE_CONSUMER", "displayName":"OCM_MARKET_INTELLIGENCE_CONSUMER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 12
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 12
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_HISTORICAL_DOCUMENTS_CONTRIBUTOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_HISTORICAL_DOCUMENTS_CONTRIBUTOR", "displayName":"OCM_HISTORICAL_DOCUMENTS_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 13
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 13
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_HISTORICAL_DOCUMENTS_COLLABORATOR with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_HISTORICAL_DOCUMENTS_COLLABORATOR", "displayName":"OCM_HISTORICAL_DOCUMENTS_COLLABORATOR" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 14
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 14
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_HISTORICAL_DOCUMENTS_MANAGER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_HISTORICAL_DOCUMENTS_MANAGER", "displayName":"OCM_HISTORICAL_DOCUMENTS_MANAGER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 15
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 15
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCM_HISTORICAL_DOCUMENTS_CONSUMER with parent group GROUP_site_ocm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCM_HISTORICAL_DOCUMENTS_CONSUMER", "displayName":"OCM_HISTORICAL_DOCUMENTS_CONSUMER" , "parentIds": ["GROUP_site_ocm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 16
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 16
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_SINGLE_FAMILY_CONSUMER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_SINGLE_FAMILY_CONSUMER", "displayName":"OIPM_SINGLE_FAMILY_CONSUMER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 17
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 17
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_SINGLE_FAMILY_CONTRIBUTOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_SINGLE_FAMILY_CONTRIBUTOR", "displayName":"OIPM_SINGLE_FAMILY_CONTRIBUTOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 18
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 18
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_SINGLE_FAMILY_COLLABORATOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_SINGLE_FAMILY_COLLABORATOR", "displayName":"OIPM_SINGLE_FAMILY_COLLABORATOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 19
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 19
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_SINGLE_FAMILY_MANAGER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_SINGLE_FAMILY_MANAGER", "displayName":"OIPM_SINGLE_FAMILY_MANAGER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 20
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 20
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MULTIFAMILY_CONSUMER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MULTIFAMILY_CONSUMER", "displayName":"OIPM_MULTIFAMILY_CONSUMER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 21
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 21
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MULTIFAMILY_CONTRIBUTOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MULTIFAMILY_CONTRIBUTOR", "displayName":"OIPM_MULTIFAMILY_CONTRIBUTOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 22
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 22
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MULTIFAMILY_COLLABORATOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MULTIFAMILY_COLLABORATOR", "displayName":"OIPM_MULTIFAMILY_COLLABORATOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 23
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 23
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MULTIFAMILY_MANAGER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MULTIFAMILY_MANAGER", "displayName":"OIPM_MULTIFAMILY_MANAGER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 24
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 24
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONSUMER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONSUMER", "displayName":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONSUMER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 25
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 25
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONTRIBUTOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONTRIBUTOR", "displayName":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_CONTRIBUTOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 26
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 26
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MONITORING_AND_ASSET_MANAGEMENT_COLLABORATOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_COLLABORATOR", "displayName":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_COLLABORATOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 27
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 27
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MONITORING_AND_ASSET_MANAGEMENT_MANAGER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_MANAGER", "displayName":"OIPM_MONITORING_AND_ASSET_MANAGEMENT_MANAGER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 28
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 28
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MANUFACTURED_HOUSING_CONSUMER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MANUFACTURED_HOUSING_CONSUMER", "displayName":"OIPM_MANUFACTURED_HOUSING_CONSUMER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 29
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 29
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MANUFACTURED_HOUSING_CONTRIBUTOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MANUFACTURED_HOUSING_CONTRIBUTOR", "displayName":"OIPM_MANUFACTURED_HOUSING_CONTRIBUTOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 30
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 30
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MANUFACTURED_HOUSING_COLLABORATOR with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MANUFACTURED_HOUSING_COLLABORATOR", "displayName":"OIPM_MANUFACTURED_HOUSING_COLLABORATOR" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 31
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 31
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OIPM_MANUFACTURED_HOUSING_MANAGER with parent group GROUP_site_oipm_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OIPM_MANUFACTURED_HOUSING_MANAGER", "displayName":"OIPM_MANUFACTURED_HOUSING_MANAGER" , "parentIds": ["GROUP_site_oipm_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 32
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 32
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group GNMA_APM_CONTRIBUTOR with parent group GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"GNMA_APM_CONTRIBUTOR", "displayName":"GNMA_APM_CONTRIBUTOR" , "parentIds": ["GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 33
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 33
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group GNMA_APM_CONSUMER with parent group GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"GNMA_APM_CONSUMER", "displayName":"GNMA_APM_CONSUMER" , "parentIds": ["GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 34
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 34
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group GNMA_APM_COLLABORATOR with parent group GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"GNMA_APM_COLLABORATOR", "displayName":"GNMA_APM_COLLABORATOR" , "parentIds": ["GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 35
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 35
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group GNMA_APM_MANAGER with parent group GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"GNMA_APM_MANAGER", "displayName":"GNMA_APM_MANAGER" , "parentIds": ["GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 36
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 36
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_TFG_MANAGER with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_TFG_MANAGER", "displayName":"OPEVP_TFG_MANAGER" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 37
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 37
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_TFG_CONTRIBUTOR with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_TFG_CONTRIBUTOR", "displayName":"OPEVP_TFG_CONTRIBUTOR" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 38
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 38
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_TFG_COLLABORATOR with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_TFG_COLLABORATOR", "displayName":"OPEVP_TFG_COLLABORATOR" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 39
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 39
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_TFG_CONSUMER with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_TFG_CONSUMER", "displayName":"OPEVP_TFG_CONSUMER" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 40
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 40
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_SSPC_MANAGER with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_SSPC_MANAGER", "displayName":"OPEVP_SSPC_MANAGER" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 41
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 41
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_SSPC_CONTRIBUTOR with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_SSPC_CONTRIBUTOR", "displayName":"OPEVP_SSPC_CONTRIBUTOR" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 42
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 42
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_SSPC_COLLABORATOR with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_SSPC_COLLABORATOR", "displayName":"OPEVP_SSPC_COLLABORATOR" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 43
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 43
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OPEVP_SSPC_CONSUMER with parent group GROUP_site_opevp_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OPEVP_SSPC_CONSUMER", "displayName":"OPEVP_SSPC_CONSUMER" , "parentIds": ["GROUP_site_opevp_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 44
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 44
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_MEDIA_MANAGER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_MEDIA_MANAGER", "displayName":"CCR_MEDIA_MANAGER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 45
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 45
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_MEDIA_CONTRIBUTOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_MEDIA_CONTRIBUTOR", "displayName":"CCR_MEDIA_CONTRIBUTOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 46
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 46
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_MEDIA_COLLABORATOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_MEDIA_COLLABORATOR", "displayName":"CCR_MEDIA_COLLABORATOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 47
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 47
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_MEDIA_CONSUMER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_MEDIA_CONSUMER", "displayName":"CCR_MEDIA_CONSUMER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 48
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 48
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_INDASSOC_MANAGER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_INDASSOC_MANAGER", "displayName":"CCR_INDASSOC_MANAGER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 49
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 49
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_INDASSOC_CONTRIBUTOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_INDASSOC_CONTRIBUTOR", "displayName":"CCR_INDASSOC_CONTRIBUTOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 50
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 50
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_INDASSOC_COLLABORATOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_INDASSOC_COLLABORATOR", "displayName":"CCR_INDASSOC_COLLABORATOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 51
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 51
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_INDASSOC_CONSUMER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_INDASSOC_CONSUMER", "displayName":"CCR_INDASSOC_CONSUMER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 52
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 52
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_HUDOPA_MANAGER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_HUDOPA_MANAGER", "displayName":"CCR_HUDOPA_MANAGER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 53
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 53
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_HUDOPA_CONTRIBUTOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_HUDOPA_CONTRIBUTOR", "displayName":"CCR_HUDOPA_CONTRIBUTOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 54
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 54
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_HUDOPA_COLLABORATOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_HUDOPA_COLLABORATOR", "displayName":"CCR_HUDOPA_COLLABORATOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 55
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 55
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_HUDOPA_CONSUMER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_HUDOPA_CONSUMER", "displayName":"CCR_HUDOPA_CONSUMER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 56
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 56
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_OCIR_MANAGER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_OCIR_MANAGER", "displayName":"CCR_OCIR_MANAGER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 57
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 57
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_OCIR_CONTRIBUTOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_OCIR_CONTRIBUTOR", "displayName":"CCR_OCIR_CONTRIBUTOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 58
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 58
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_OCIR_COLLABORATOR with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_OCIR_COLLABORATOR", "displayName":"CCR_OCIR_COLLABORATOR" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 59
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 59
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group CCR_OCIR_CONSUMER with parent group GROUP_site_ccr_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"CCR_OCIR_CONSUMER", "displayName":"CCR_OCIR_CONSUMER" , "parentIds": ["GROUP_site_ccr_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 60
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 60
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_BUDGET_MANAGER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_BUDGET_MANAGER", "displayName":"OCFO_BUDGET_MANAGER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 61
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 61
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_BUDGET_CONTRIBUTOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_BUDGET_CONTRIBUTOR", "displayName":"OCFO_BUDGET_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 62
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 62
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_BUDGET_COLLABORATOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_BUDGET_COLLABORATOR", "displayName":"OCFO_BUDGET_COLLABORATOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 63
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 63
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_BUDGET_CONSUMER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_BUDGET_CONSUMER", "displayName":"OCFO_BUDGET_CONSUMER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 64
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 64
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_CONTROLLER_MANAGER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_CONTROLLER_MANAGER", "displayName":"OCFO_CONTROLLER_MANAGER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 65
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 65
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_CONTROLLER_CONTRIBUTOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_CONTROLLER_CONTRIBUTOR", "displayName":"OCFO_CONTROLLER_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 66
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 66
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_CONTROLLER_COLLABORATOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_CONTROLLER_COLLABORATOR", "displayName":"OCFO_CONTROLLER_COLLABORATOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 67
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 67
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_CONTROLLER_CONSUMER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_CONTROLLER_CONSUMER", "displayName":"OCFO_CONTROLLER_CONSUMER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 68
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 68
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_GOVCOMP_MANAGER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_GOVCOMP_MANAGER", "displayName":"OCFO_GOVCOMP_MANAGER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 69
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 69
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_GOVCOMP_CONTRIBUTOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_GOVCOMP_CONTRIBUTOR", "displayName":"OCFO_GOVCOMP_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 70
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 70
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_GOVCOMP_COLLABORATOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_GOVCOMP_COLLABORATOR", "displayName":"OCFO_GOVCOMP_COLLABORATOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 71
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 71
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_GOVCOMP_CONSUMER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_GOVCOMP_CONSUMER", "displayName":"OCFO_GOVCOMP_CONSUMER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 72
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 72
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_TREASURY_MANAGER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_TREASURY_MANAGER", "displayName":"OCFO_TREASURY_MANAGER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 73
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 73
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_TREASURY_CONTRIBUTOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_TREASURY_CONTRIBUTOR", "displayName":"OCFO_TREASURY_CONTRIBUTOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 74
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 74
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_TREASURY_COLLABORATOR with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_TREASURY_COLLABORATOR", "displayName":"OCFO_TREASURY_COLLABORATOR" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 75
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 75
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OCFO_TREASURY_CONSUMER with parent group GROUP_site_ocfo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OCFO_TREASURY_CONSUMER", "displayName":"OCFO_TREASURY_CONSUMER" , "parentIds": ["GROUP_site_ocfo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 76
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 76
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_PMO_MANAGER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_PMO_MANAGER", "displayName":"OEDTS_PMO_MANAGER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 77
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 77
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_PMO_CONTRIBUTOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_PMO_CONTRIBUTOR", "displayName":"OEDTS_PMO_CONTRIBUTOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 78
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 78
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_PMO_COLLABORATOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_PMO_COLLABORATOR", "displayName":"OEDTS_PMO_COLLABORATOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:15 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:15 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 79
+01/03/23 11:54:15 INFO  - 56   - GroupServices.processGroups: Processing CSV row 79
+01/03/23 11:54:15 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_PMO_CONSUMER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:15 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_PMO_CONSUMER", "displayName":"OEDTS_PMO_CONSUMER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 80
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 80
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_TMD_MANAGER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_TMD_MANAGER", "displayName":"OEDTS_TMD_MANAGER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 81
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 81
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_TMD_CONTRIBUTOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_TMD_CONTRIBUTOR", "displayName":"OEDTS_TMD_CONTRIBUTOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 82
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 82
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_TMD_COLLABORATOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_TMD_COLLABORATOR", "displayName":"OEDTS_TMD_COLLABORATOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 83
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 83
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_TMD_CONSUMER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_TMD_CONSUMER", "displayName":"OEDTS_TMD_CONSUMER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 84
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 84
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_EDS_MANAGER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_EDS_MANAGER", "displayName":"OEDTS_EDS_MANAGER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 85
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 85
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_EDS_CONTRIBUTOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_EDS_CONTRIBUTOR", "displayName":"OEDTS_EDS_CONTRIBUTOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 86
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 86
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_EDS_COLLABORATOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_EDS_COLLABORATOR", "displayName":"OEDTS_EDS_COLLABORATOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 87
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 87
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_EDS_CONSUMER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_EDS_CONSUMER", "displayName":"OEDTS_EDS_CONSUMER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 88
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 88
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_INFRASTRUCTURE_MANAGER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_INFRASTRUCTURE_MANAGER", "displayName":"OEDTS_INFRASTRUCTURE_MANAGER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 89
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 89
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_INFRASTRUCTURE_CONTRIBUTOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_INFRASTRUCTURE_CONTRIBUTOR", "displayName":"OEDTS_INFRASTRUCTURE_CONTRIBUTOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 90
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 90
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_INFRASTRUCTURE_COLLABORATOR with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_INFRASTRUCTURE_COLLABORATOR", "displayName":"OEDTS_INFRASTRUCTURE_COLLABORATOR" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 91
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 91
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OEDTS_INFRASTRUCTURE_CONSUMER with parent group GROUP_site_oedts_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OEDTS_INFRASTRUCTURE_CONSUMER", "displayName":"OEDTS_INFRASTRUCTURE_CONSUMER" , "parentIds": ["GROUP_site_oedts_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 92
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 92
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRC_MANAGER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRC_MANAGER", "displayName":"OER_TRC_MANAGER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 93
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 93
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRC_CONTRIBUTOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRC_CONTRIBUTOR", "displayName":"OER_TRC_CONTRIBUTOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 94
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 94
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRC_COLLABORATOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRC_COLLABORATOR", "displayName":"OER_TRC_COLLABORATOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 95
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 95
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRC_CONSUMER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRC_CONSUMER", "displayName":"OER_TRC_CONSUMER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 96
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 96
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TR_MANAGER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TR_MANAGER", "displayName":"OER_TR_MANAGER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 97
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 97
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TR_CONTRIBUTOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TR_CONTRIBUTOR", "displayName":"OER_TR_CONTRIBUTOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 98
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 98
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TR_COLLABORATOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TR_COLLABORATOR", "displayName":"OER_TR_COLLABORATOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 99
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 99
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TR_CONSUMER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TR_CONSUMER", "displayName":"OER_TR_CONSUMER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 100
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 100
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRO_MANAGER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRO_MANAGER", "displayName":"OER_TRO_MANAGER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 101
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 101
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRO_CONTRIBUTOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRO_CONTRIBUTOR", "displayName":"OER_TRO_CONTRIBUTOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 102
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 102
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRO_COLLABORATOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRO_COLLABORATOR", "displayName":"OER_TRO_COLLABORATOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 103
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 103
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_TRO_CONSUMER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_TRO_CONSUMER", "displayName":"OER_TRO_CONSUMER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 104
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 104
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_INFOSEC_MANAGER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_INFOSEC_MANAGER", "displayName":"OER_INFOSEC_MANAGER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 105
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 105
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_INFOSEC_CONTRIBUTOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_INFOSEC_CONTRIBUTOR", "displayName":"OER_INFOSEC_CONTRIBUTOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 106
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 106
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_INFOSEC_COLLABORATOR with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_INFOSEC_COLLABORATOR", "displayName":"OER_INFOSEC_COLLABORATOR" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 107
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 107
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OER_INFOSEC_CONSUMER with parent group GROUP_site_oer_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OER_INFOSEC_CONSUMER", "displayName":"OER_INFOSEC_CONSUMER" , "parentIds": ["GROUP_site_oer_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 108
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 108
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_PMD_MANAGER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_PMD_MANAGER", "displayName":"OMO_PMD_MANAGER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 109
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 109
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_PMD_CONTRIBUTOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_PMD_CONTRIBUTOR", "displayName":"OMO_PMD_CONTRIBUTOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 110
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 110
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_PMD_COLLABORATOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_PMD_COLLABORATOR", "displayName":"OMO_PMD_COLLABORATOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 111
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 111
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_PMD_CONSUMER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_PMD_CONSUMER", "displayName":"OMO_PMD_CONSUMER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 112
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 112
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_AMD_MANAGER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_AMD_MANAGER", "displayName":"OMO_AMD_MANAGER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 113
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 113
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_AMD_CONTRIBUTOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_AMD_CONTRIBUTOR", "displayName":"OMO_AMD_CONTRIBUTOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 114
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 114
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_AMD_COLLABORATOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_AMD_COLLABORATOR", "displayName":"OMO_AMD_COLLABORATOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 115
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 115
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_AMD_CONSUMER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_AMD_CONSUMER", "displayName":"OMO_AMD_CONSUMER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 116
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 116
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_WIT_MANAGER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_WIT_MANAGER", "displayName":"OMO_WIT_MANAGER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 117
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 117
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_WIT_CONTRIBUTOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_WIT_CONTRIBUTOR", "displayName":"OMO_WIT_CONTRIBUTOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 118
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 118
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_WIT_COLLABORATOR with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_WIT_COLLABORATOR", "displayName":"OMO_WIT_COLLABORATOR" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 119
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 119
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OMO_WIT_CONSUMER with parent group GROUP_site_omo_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OMO_WIT_CONSUMER", "displayName":"OMO_WIT_CONSUMER" , "parentIds": ["GROUP_site_omo_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 120
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 120
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_MBS_MANAGER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_MBS_MANAGER", "displayName":"OSO_MBS_MANAGER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 121
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 121
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_MBS_CONTRIBUTOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_MBS_CONTRIBUTOR", "displayName":"OSO_MBS_CONTRIBUTOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 122
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 122
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_MBS_COLLABORATOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_MBS_COLLABORATOR", "displayName":"OSO_MBS_COLLABORATOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 123
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 123
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_MBS_CONSUMER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_MBS_CONSUMER", "displayName":"OSO_MBS_CONSUMER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 124
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 124
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PPD_MANAGER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PPD_MANAGER", "displayName":"OSO_PPD_MANAGER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 125
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 125
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PPD_CONTRIBUTOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PPD_CONTRIBUTOR", "displayName":"OSO_PPD_CONTRIBUTOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 126
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 126
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PPD_COLLABORATOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PPD_COLLABORATOR", "displayName":"OSO_PPD_COLLABORATOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 127
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 127
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PPD_CONSUMER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PPD_CONSUMER", "displayName":"OSO_PPD_CONSUMER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 128
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 128
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PAD_MANAGER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PAD_MANAGER", "displayName":"OSO_PAD_MANAGER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 129
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 129
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PAD_CONTRIBUTOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PAD_CONTRIBUTOR", "displayName":"OSO_PAD_CONTRIBUTOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 130
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 130
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PAD_COLLABORATOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PAD_COLLABORATOR", "displayName":"OSO_PAD_COLLABORATOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 131
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 131
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_PAD_CONSUMER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_PAD_CONSUMER", "displayName":"OSO_PAD_CONSUMER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 132
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 132
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_CX_MANAGER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_CX_MANAGER", "displayName":"OSO_CX_MANAGER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 133
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 133
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_CX_CONTRIBUTOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_CX_CONTRIBUTOR", "displayName":"OSO_CX_CONTRIBUTOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 134
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 134
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_CX_COLLABORATOR with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_CX_COLLABORATOR", "displayName":"OSO_CX_COLLABORATOR" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 135
+01/03/23 11:54:16 INFO  - 56   - GroupServices.processGroups: Processing CSV row 135
+01/03/23 11:54:16 INFO  - 75   - GroupServices.createGroup: Creating group OSO_CX_CONSUMER with parent group GROUP_site_oso_SiteConsumer,GROUP_site_ginnie-mae-public_SiteConsumer.
+01/03/23 11:54:16 INFO  - 123  - GroupServices.buildGroupJson: Generated JSON for creating group: { "id":"OSO_CX_CONSUMER", "displayName":"OSO_CX_CONSUMER" , "parentIds": ["GROUP_site_oso_SiteConsumer","GROUP_site_ginnie-mae-public_SiteConsumer"] } 
+01/03/23 11:54:16 INFO  - 91   - GroupServices.createGroup: ...... Cannot create group as it already exists.
+01/03/23 11:54:16 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 136
+01/03/23 11:54:16 DEBUG - 151  - AlfrescoServiceBase.shouldIterate:    End of CSV has been reached.
+01/03/23 11:54:16 INFO  - 351  - App.displayAndLog: Processed:136 
+Succeeded:0 
+Partially Failed:136 
+Failed:0 
+Start Time:01/03/2023 11:54:14 
+End Time:01/03/2023 11:54:16 
+Run Time: 0 days, 0 hours, 0 minutes, 1 seconds 
+Speed:0.00 second(s) per file
+01/03/23 11:54:16 INFO  - 351  - App.displayAndLog: ------------------------- Done processing action ---------------------------

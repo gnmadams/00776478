@@ -1,0 +1,7 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="pd:modificationNumber"/>
+			<property name="pd:contractNumber"/>
+		</target>
+	 </match>
+

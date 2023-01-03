@@ -1,0 +1,10 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="tfr:contractId"/>
+			<property name="tfr:voucherId"/>
+			<property name="tfr:vendorName"/>
+			<property name="tfr:vendorId"/>
+			<property name="tfr:accountingDate"/>
+		</target>
+	 </match>
+

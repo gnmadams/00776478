@@ -1,0 +1,8 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="amdp:employeeFirstName"/>
+			<property name="amdp:employeeLastName"/>
+			<property name="amdp:action"/>
+		</target>
+	 </match>
+

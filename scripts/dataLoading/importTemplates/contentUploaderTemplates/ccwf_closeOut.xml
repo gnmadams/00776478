@@ -1,0 +1,10 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="ccwf:contractNumber"/>
+			<property name="ccwf:contractFileName"/>
+			<property name="ccwf:contractorName"/>
+			<property name="ccwf:subContractorName"/>
+			<property name="ccwf:documentStatus"/>
+		</target>
+	 </match>
+

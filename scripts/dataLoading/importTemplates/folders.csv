@@ -1,0 +1,412 @@
+siteid,parentfolder,foldername,groupid,readonly,cupContentTypes
+ccr,documentLibrary,Department of Housing and Urban Development (HUD) Offices of Public Affairs,CCR_HUDOPA,TRUE,damsBase:damsBaseDocument
+ccr,documentLibrary,Industry Associations,CCR_INDASSOC,TRUE,damsBase:damsBaseDocument
+ccr,documentLibrary,Media,CCR_MEDIA,TRUE,damsBase:damsBaseDocument
+ccr,documentLibrary,Office of Congressional and Intergovernmental Relations,CCR_OCIR,TRUE,damsBase:damsBaseDocument
+ccr,documentLibrary/Department of Housing and Urban Development (HUD) Offices of Public Affairs,General Documents,CCR_HUDOPA,TRUE,
+ccr,documentLibrary/Department of Housing and Urban Development (HUD) Offices of Public Affairs/General Documents,Public Affairs Documents,CCR_HUDOPA,,
+ccr,documentLibrary/Industry Associations,General Documents,CCR_INDASSOC,TRUE,
+ccr,documentLibrary/Industry Associations/General Documents,Industry Associations Documents,CCR_INDASSOC,,
+ccr,documentLibrary/Media,General Documents,CCR_MEDIA,TRUE,
+ccr,documentLibrary/Media/General Documents,Media Documents,CCR_MEDIA,,
+ccr,documentLibrary/Office of Congressional and Intergovernmental Relations,General Documents,CCR_OCIR,TRUE,
+ccr,documentLibrary/Office of Congressional and Intergovernmental Relations/General Documents,Congressional Documents,CCR_OCIR,,
+ginnie-mae-public,documentLibrary,All Participant Memos,GNMA_APM,,apm:ALL_PARTICIPANT_MEMOS
+ginnie-mae-public,documentLibrary,Documentation,GNMA_APM,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary,Budget,OCFO_BUDGET,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary,Controller’s Division,OCFO_CONTROLLER,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary,Governance and Compliance,OCFO_GOVCOMP,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary/Budget,General Documents,OCFO_BUDGET,TRUE,
+ocfo,documentLibrary/Budget/General Documents,Budget Documents,OCFO_BUDGET,,
+ocfo,documentLibrary/Controller’s Division,General Documents,OCFO_CONTROLLER,TRUE,
+ocfo,documentLibrary/Controller’s Division/General Documents,Controller Documents,OCFO_CONTROLLER,,
+ocfo,documentLibrary/Governance and Compliance,General Documents,OCFO_GOVCOMP,TRUE,
+ocfo,documentLibrary/Governance and Compliance/General Documents,Governance Compliance Documents,OCFO_GOVCOMP,,
+ocfo,documentLibrary,Treasury Division,OCFO_TREASURY,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary/Treasury Division,Treasury Financial Records,OCFO_TREASURY,TRUE,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records,Fiscal Year 2021,OCFO_TREASURY,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,1099 Reports,OCFO_TREASURY,TRUE,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/1099 Reports,Year end reporting,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,Annual GAO confirmation of Investment Account Balance,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,Audits,OCFO_TREASURY,TRUE,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,A-123,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,Financial Statement Audit,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,GAO,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,OMB,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,Bureau of Fiscal Services,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Audits,US Treasury Reports - SSAE-18-SOC 1 & SOC 2,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,Cash Receipts Vouchers (CRVs),OCFO_TREASURY,TRUE,tfr:cashReceiptVoucher
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{October 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{November 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{December 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{January 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{February 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{March 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{April 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{May 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{June 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{July 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{August 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Cash Receipts Vouchers (CRVs),{September 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,Criminal Restitution,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021,Disbursement Vouchers (DVs),OCFO_TREASURY,TRUE,tfr:disbursementVoucherGSAContract
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs),GSA Contracts,OCFO_TREASURY,TRUE,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/GSA Contracts,CGI Contracts,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/GSA Contracts,Deloitte Contracts,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs),Miscellaneous,OCFO_TREASURY,TRUE,tfr:disbursementVoucherMiscellaneous
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Claims Payment,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Commitment Fees,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Dept of Justice,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Dept of Treasury,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Ginnie Mae Vendor,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Guaranty Fee,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,MF 1% Reimbursement,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Miscellaneous refunds,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Other vendors,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Pool Transfer Refund,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,SSCRA Reimbursement,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Miscellaneous,Unclaimed Funds GN I&II,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs),Non-GSA Contracts,OCFO_TREASURY,TRUE,tfr:disbursementVoucherNonGSAContract
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Non-GSA Contracts,Non-GSA Contract 1,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Non-GSA Contracts,Non-GSA Contract 2,OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs),Overnight Investment,OCFO_TREASURY,TRUE,damsBase:damsBaseDocument
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{October 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{November 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{December 2021},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{January 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{February 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{March 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{April 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{May 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{June 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{July 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{August 2022},OCFO_TREASURY,,
+ocfo,documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs)/Overnight Investment,{September 2022},OCFO_TREASURY,,
+ocm,documentLibrary,Capital Markets Historical Documents,OCM_HISTORICAL_DOCUMENTS,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary,Global Emerging Market,OCM_GLOBAL_EMERGING_MARKET,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary,Market Intelligence,OCM_MARKET_INTELLIGENCE,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary,Structured Solutions,OCM_STRUCTURED_SOLUTIONS,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary/Capital Markets Historical Documents,Closing Document - Disk,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Guaranty Agreement,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Historical,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Legal Advisor Letter,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Misc,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Offering Circulator Supplement,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Official Financial Advisor Letter,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Sponsor Agreement,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Capital Markets Historical Documents,Transaction Initiation Letter,OCM_HISTORICAL_DOCUMENTS,TRUE,
+ocm,documentLibrary/Global Emerging Market,General Documents,OCM_GLOBAL_EMERGING_MARKET,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary/Global Emerging Market/General Documents,Emerging Documents,OCM_GLOBAL_EMERGING_MARKET,,
+ocm,documentLibrary/Market Intelligence,General Documents,OCM_MARKET_INTELLIGENCE,TRUE,damsBase:damsBaseDocument
+ocm,documentLibrary/Market Intelligence/General Documents,Market Documents,OCM_MARKET_INTELLIGENCE,,
+ocm,documentLibrary/Structured Solutions,REMIC Closing Documents,OCM_STRUCTURED_SOLUTIONS,TRUE,remiccd:REMIC_CLOSING_DOCUMENTS
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Accountants Agree-upon Procedures (Print),OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Accountants Agree-upon Procedures report (Closing),OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Base Offering Circular,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Closing Flow of Funds Instruction Letter,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Glossary,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,GNMA Guaranty Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Issuance Statement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,MX standard Trust provisions,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,MX Tax Opinion,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,MX Trust Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Offering Circular Supplement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,OID Prices Letter,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Opinion of HUD General Counsel,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Opinion of Sponsor,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Opinion of Trustees Counsel,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,REMIC Standard Trust Provisions,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,REMIC Trust Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Respresentation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Closing),OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Respresentation Letter of Sponsor for Accountants Agreed-Upon Procedure Report (Print),OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Sponsor Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Standard Sponsor Provisions,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Transaction Opinion,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Transfer Affidavit relating to the Residual Securities,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Trustee Receipt and Safekeeping Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Waiver Agreement,OCM_STRUCTURED_SOLUTIONS,,
+ocm,documentLibrary/Structured Solutions/REMIC Closing Documents,Work Group List,OCM_STRUCTURED_SOLUTIONS,,
+oedts,documentLibrary,Enterprise Data Solutions Division (EDS),OEDTS_EDS,TRUE,damsBase:damsBaseDocument
+oedts,documentLibrary,Infrastructure Group,OEDTS_INFRASTRUCTURE,TRUE,damsBase:damsBaseDocument
+oedts,documentLibrary,Project Management Office (PMO),OEDTS_PMO,TRUE,damsBase:damsBaseDocument
+oedts,documentLibrary,Technology Management Division (TMD),OEDTS_TMD,TRUE,damsBase:damsBaseDocument
+oedts,documentLibrary/Enterprise Data Solutions Division (EDS),General Documents,OEDTS_EDS,TRUE,
+oedts,documentLibrary/Enterprise Data Solutions Division (EDS)/General Documents,Data Documents,OEDTS_EDS,,
+oedts,documentLibrary/Infrastructure Group,General Documents,OEDTS_INFRASTRUCTURE,TRUE,
+oedts,documentLibrary/Infrastructure Group/General Documents,Infrastructure Documents,OEDTS_INFRASTRUCTURE,,
+oedts,documentLibrary/Project Management Office (PMO),General Documents,OEDTS_PMO,TRUE,
+oedts,documentLibrary/Project Management Office (PMO)/General Documents,Project Management Documents,OEDTS_PMO,,
+oedts,documentLibrary/Technology Management Division (TMD),General Documents,OEDTS_TMD,TRUE,
+oedts,documentLibrary/Technology Management Division (TMD)/General Documents,Technology Documents,OEDTS_TMD,,
+oer,documentLibrary,Counterparty Risk Analysis Division (TRC),OER_TRC,TRUE,damsBase:damsBaseDocument
+oer,documentLibrary,Economical Modeling Analysis Division (TR),OER_TR,TRUE,damsBase:damsBaseDocument
+oer,documentLibrary,Operational Risk Analysis Division (TRO),OER_TRO,TRUE,damsBase:damsBaseDocument
+oer,documentLibrary/Counterparty Risk Analysis Division (TRC),General Documents,OER_TRC,TRUE,
+oer,documentLibrary/Counterparty Risk Analysis Division (TRC)/General Documents,Risk Analysis Documents,OER_TRC,,
+oer,documentLibrary/Economical Modeling Analysis Division (TR),General Documents,OER_TR,TRUE,
+oer,documentLibrary/Economical Modeling Analysis Division (TR)/General Documents,Modeling Analysis Documents,OER_TR,,
+oer,documentLibrary/Operational Risk Analysis Division (TRO),General Documents,OER_TRO,TRUE,
+oer,documentLibrary/Operational Risk Analysis Division (TRO)/General Documents,Risk Analysis Documents,OER_TRO,,
+oipm,documentLibrary,Manufactured Housing,OIPM_MANUFACTURED_HOUSING,TRUE,mhdoc:mhDocuments
+oipm,documentLibrary,Monitoring And Asset Management,OIPM_MONITORING_AND_ASSET_MANAGEMENT,TRUE,
+oipm,documentLibrary,Multifamily,OIPM_MULTIFAMILY,TRUE,damsBase:damsBaseDocument
+oipm,documentLibrary,Single-Family,OIPM_SINGLE_FAMILY,TRUE,damsBase:damsBaseDocument
+oipm,documentLibrary/Manufactured Housing,Manufactured Homes Documents,OIPM_MANUFACTURED_HOUSING,TRUE,mhdoc:mhDocuments
+oipm,documentLibrary/Manufactured Housing,Manufactured Homes Historical Documents,OIPM_MANUFACTURED_HOUSING,TRUE,mhdoc:mhDocuments
+oipm,documentLibrary/Manufactured Housing/Manufactured Homes Documents,Loan Disposition Files,OIPM_MANUFACTURED_HOUSING,,
+oipm,documentLibrary/Manufactured Housing/Manufactured Homes Documents,Rejected Application Files,OIPM_MANUFACTURED_HOUSING,,
+oipm,documentLibrary/Monitoring And Asset Management,Monitoring And Asset Management Documents,OIPM_MONITORING_AND_ASSET_MANAGEMENT,TRUE,mamdoc:mamDocuments
+oipm,documentLibrary/Monitoring And Asset Management/Monitoring And Asset Management Documents,Denied Application Files,OIPM_MONITORING_AND_ASSET_MANAGEMENT,,
+oipm,documentLibrary/Monitoring And Asset Management/Monitoring And Asset Management Documents,Monitoring Terminated Files,OIPM_MONITORING_AND_ASSET_MANAGEMENT,,
+oipm,documentLibrary/Multifamily,Contract Documents,OIPM_MULTIFAMILY,TRUE,smfcondoc:smfContractDocuments
+oipm,documentLibrary/Multifamily,Defaulted Issuers (Already in EDRM),OIPM_MULTIFAMILY,TRUE,smfdefissr:smfDefaultedIssuerDocuments
+oipm,documentLibrary/Multifamily,Electronic Contract Documents ,OIPM_MULTIFAMILY,TRUE,smfelectdoc:smfElectronicContractDocuments
+oipm,documentLibrary/Multifamily,Electronic Transfer Contract Documents,OIPM_MULTIFAMILY,TRUE,smfelectrans:smfElectronicTransferContractDocuments
+oipm,documentLibrary/Multifamily,Enterprise Correspondence,OIPM_MULTIFAMILY,TRUE,smfentcorr:smfEnterpriseCorrespondence
+oipm,documentLibrary/Multifamily,Formal Request,OIPM_MULTIFAMILY,TRUE,smfformreq:smfFormalRequest
+oipm,documentLibrary/Multifamily,Historical Contract Documents ,OIPM_MULTIFAMILY,TRUE,smfhistcon:smfHistoricalContractDocuments
+oipm,documentLibrary/Multifamily,Issuer Application Documents,OIPM_MULTIFAMILY,TRUE,smfissrapp:smfIssuerApplicationDocuments
+oipm,documentLibrary/Multifamily,Multifamily Historical Documents,OIPM_MULTIFAMILY,TRUE,
+oipm,documentLibrary/Multifamily,OIPM Supplemental Documents,OIPM_MULTIFAMILY,TRUE,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Multifamily,Scanned Contract Documents (document custodian - Ashley Askin contact),OIPM_MULTIFAMILY,TRUE,smfscancon:smfScannedContractDocuments
+oipm,documentLibrary/Multifamily,Terminated Issuer Documents (Already in EDRM),OIPM_MULTIFAMILY,TRUE,smftermissr:smfTerminatedIssuerDocuments
+oipm,documentLibrary/Multifamily/Contract Documents,OIPM-Contract Documents (Specific to a group in GNMA reviewing the various contracts.),OIPM_MULTIFAMILY,,smfcondoc:smfContractDocuments
+oipm,documentLibrary/Multifamily/Defaulted Issuers (Already in EDRM),Default Issuer Files,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Contract Documents ,Contract Deliverables,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Contract Documents ,Contract files,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Contract Documents ,Copies of Contracts,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Contract Documents ,CPARS Reports,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Contract Documents ,Modifications of Contracts,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Transfer Contract Documents,Bank Statements,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Transfer Contract Documents,CSVs,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Transfer Contract Documents,Electronic Transfer,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Transfer Contract Documents,PDFs,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Electronic Transfer Contract Documents,Spreadsheets,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Enterprise Correspondence,All Participant Memoranda (APM),OIPM_MULTIFAMILY,,smfentcorr:smfEnterpriseCorrespondence
+oipm,documentLibrary/Multifamily/Formal Request,FOIA Request,OIPM_MULTIFAMILY,,smfformreq:smfFormalRequest
+oipm,documentLibrary/Multifamily/Formal Request,FOIA Supplemental,OIPM_MULTIFAMILY,,smfformreq:smfFormalRequest
+oipm,documentLibrary/Multifamily/Historical Contract Documents ,Fidelity and Insurance Information,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Historical Contract Documents ,Historical Annual Audited Financial Statements,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Historical Contract Documents ,IPA Independent Public Account Documents,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Anti-Discrimination Policies,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Most Recent Fannie Mae and Freddie Mac Field Review,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,"Applicant’s Most Recent Field Review by FHA, VA, and/or RD",OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Organizational Structure Chart,OIPM_MULTIFAMILY,,smfissrapporg:smfIssuerApplicantOrgChart
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Originating and Servicing Experience Related to Fannie Mae,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,"Applicant’s Originating and Servicing Experience Related to FHA, VA, PIH, and/or RD",OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Originating and Servicing Experience Related to Freddie Mac,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Applicant’s Plans for Servicing Ginnie Mae Pooled Loans,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Application for Approval Ginnie Mae Mortgage-Backed Securities Issuer,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Application Payment Receipt,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Audited Financial Statements ,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Certificate of Insurance (ACORD document),OIPM_MULTIFAMILY,,smfissrcoi:smfIssuerCertOfInsurance
+oipm,documentLibrary/Multifamily/Issuer Application Documents,"Contact Information for Mortgage Insurance Companies, Warehouse Lenders, and Investors with Whom the Applicant Is Currently Doing Business",OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Cross Default Agreement,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Current Servicing Portfolio Statistics,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Detailed Servicing Experience of the Organization and Employee(s),OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Dollar Value of Any Pledged Assets or Related Party Transactions,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Dollar Value of Loans to Officers/Directors/Affiliates,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Evidence of Errors and Omissions Coverage,OIPM_MULTIFAMILY,,smfissreeom:smfIssuerEvidenceOfErrorOmissions
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Evidence of Fidelity Bond Insurance Coverage,OIPM_MULTIFAMILY,,smfissrefbic:smfIssuerEvidenceFbiCoverage
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Evidence of Policies and Procedures for Secondary Marketing and Capital Markets,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Evidence of Quality Control Report for Underwriting/Origination and Servicing/Subservicer Oversight,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Executed Subservicing Agreement,OIPM_MULTIFAMILY,,smfissrexec:smfIssuerExecSubSvcAgreement
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Intended Activities with Ginnie Mae,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Interim Financial Statements,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Issuer Files,OIPM_MULTIFAMILY,,smfissrfiles:smfIssuerFiles
+oipm,documentLibrary/Multifamily/Issuer Application Documents,License of Audit Firm,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,List of All Business Lines the Applicant is Involved in and Any Other Noteworthy Industry or Business Relationships,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,List of All Loan Types That Are Originated and/or Serviced by the Applicant,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,List of States the Applicant is Currently Licensed,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Loan Production Breakdown,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Miscellaneous Files,OIPM_MULTIFAMILY,,smfissrmisc:smfIssuerMiscFiles
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Narrative of the Applicant’s Securitized Mortgage Activity,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Officer(s) and Employee(s) Information,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Officer(s) and Employee(s) Resumes,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Organizational Chart for Corporate Family and Affiliates,OIPM_MULTIFAMILY,,smfissrorg:smfIssuerOrgCorpFamAffiliates
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Quality Control Plans for Underwriting/Origination and Servicing/Subservicer Oversight,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Resolution of Board of Directors and Certificate of Authorized Signatures,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Servicing Experience Detail Worksheet,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Statement Describing the Applicant’s Board of Directors,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Issuer Application Documents,Supplemental Files,OIPM_MULTIFAMILY,,smfissrsupp:smfIssuerSupplementalFiles
+oipm,documentLibrary/Multifamily/OIPM Supplemental Documents,Commitment Authority Documents - Inside of OIPM,OIPM_MULTIFAMILY,,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Multifamily/OIPM Supplemental Documents,Document Custodian Files - internal GMNA file,OIPM_MULTIFAMILY,,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Multifamily/Scanned Contract Documents (document custodian - Ashley Askin contact),Contract Custodian Files,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Scanned Contract Documents (document custodian - Ashley Askin contact),Contract Files,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Multifamily/Terminated Issuer Documents (Already in EDRM),Terminated Issuer Files,OIPM_MULTIFAMILY,,
+oipm,documentLibrary/Single-Family,Contract Documents,OIPM_SINGLE_FAMILY,TRUE,smfcondoc:smfContractDocuments
+oipm,documentLibrary/Single-Family,Defaulted Issuers (Already in EDRM),OIPM_SINGLE_FAMILY,TRUE,smfdefissr:smfDefaultedIssuerDocuments
+oipm,documentLibrary/Single-Family,Electronic Contract Documents ,OIPM_SINGLE_FAMILY,TRUE,smfelectdoc:smfElectronicContractDocuments
+oipm,documentLibrary/Single-Family,Electronic Transfer Contract Documents,OIPM_SINGLE_FAMILY,TRUE,smfelectrans:smfElectronicTransferContractDocuments
+oipm,documentLibrary/Single-Family,Enterprise Correspondence,OIPM_SINGLE_FAMILY,TRUE,smfentcorr:smfEnterpriseCorrespondence
+oipm,documentLibrary/Single-Family,Formal Request,OIPM_SINGLE_FAMILY,TRUE,smfformreq:smfFormalRequest
+oipm,documentLibrary/Single-Family,Historical Contract Documents ,OIPM_SINGLE_FAMILY,TRUE,smfhistcon:smfHistoricalContractDocuments
+oipm,documentLibrary/Single-Family,Issuer Application Documents,OIPM_SINGLE_FAMILY,TRUE,smfissrapp:smfIssuerApplicationDocuments
+oipm,documentLibrary/Single-Family,OIPM Supplemental Documents,OIPM_SINGLE_FAMILY,TRUE,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Single-Family,Scanned Contract Documents (document custodian - Ashley Askin contact),OIPM_SINGLE_FAMILY,TRUE,smfscancon:smfScannedContractDocuments
+oipm,documentLibrary/Single-Family,Terminated Issuer Documents (Already in EDRM),OIPM_SINGLE_FAMILY,TRUE,smftermissr:smfTerminatedIssuerDocuments
+oipm,documentLibrary/Single-Family/Contract Documents,OIPM-Contract Documents (Specific to a group in GNMA reviewing the various contracts.),OIPM_SINGLE_FAMILY,,smfcondoc:smfContractDocuments
+oipm,documentLibrary/Single-Family/Defaulted Issuers (Already in EDRM),Default Issuer Files,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Contract Documents ,Contract Deliverables,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Contract Documents ,Contract files,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Contract Documents ,Copies of Contracts,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Contract Documents ,CPARS Reports,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Contract Documents ,Modifications of Contracts,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Transfer Contract Documents,Bank Statements,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Transfer Contract Documents,CSVs,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Transfer Contract Documents,Electronic Transfer,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Transfer Contract Documents,PDFs,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Electronic Transfer Contract Documents,Spreadsheets,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Enterprise Correspondence,All Participant Memoranda (APM),OIPM_SINGLE_FAMILY,,smfentcorr:smfEnterpriseCorrespondence
+oipm,documentLibrary/Single-Family/Formal Request,FOIA Request,OIPM_SINGLE_FAMILY,,smfformreq:smfFormalRequest
+oipm,documentLibrary/Single-Family/Formal Request,FOIA Supplemental,OIPM_SINGLE_FAMILY,,smfformreq:smfFormalRequest
+oipm,documentLibrary/Single-Family/Historical Contract Documents ,Fidelity and Insurance Information,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Historical Contract Documents ,Historical Annual Audited Financial Statements,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Historical Contract Documents ,IPA Independent Public Account Documents,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Anti-Discrimination Policies,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Most Recent Fannie Mae and Freddie Mac Field Review,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,"Applicant’s Most Recent Field Review by FHA, VA, and/or RD",OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Organizational Structure Chart,OIPM_SINGLE_FAMILY,,smfissrapporg:smfIssuerApplicantOrgChart
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Originating and Servicing Experience Related to Fannie Mae,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,"Applicant’s Originating and Servicing Experience Related to FHA, VA, PIH, and/or RD",OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Originating and Servicing Experience Related to Freddie Mac,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Applicant’s Plans for Servicing Ginnie Mae Pooled Loans,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Application for Approval Ginnie Mae Mortgage-Backed Securities Issuer,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Application Payment Receipt,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Audited Financial Statements ,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Certificate of Insurance (ACORD document),OIPM_SINGLE_FAMILY,,smfissrcoi:smfIssuerCertOfInsurance
+oipm,documentLibrary/Single-Family/Issuer Application Documents,"Contact Information for Mortgage Insurance Companies, Warehouse Lenders, and Investors with Whom the Applicant Is Currently Doing Business",OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Cross Default Agreement,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Current Servicing Portfolio Statistics,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Detailed Servicing Experience of the Organization and Employee(s),OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Dollar Value of Any Pledged Assets or Related Party Transactions,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Dollar Value of Loans to Officers/Directors/Affiliates,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Evidence of Errors and Omissions Coverage,OIPM_SINGLE_FAMILY,,smfissreeom:smfIssuerEvidenceOfErrorOmissions
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Evidence of Fidelity Bond Insurance Coverage,OIPM_SINGLE_FAMILY,,smfissrefbic:smfIssuerEvidenceFbiCoverage
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Evidence of Policies and Procedures for Secondary Marketing and Capital Markets,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Evidence of Quality Control Report for Underwriting/Origination and Servicing/Subservicer Oversight,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Executed Subservicing Agreement,OIPM_SINGLE_FAMILY,,smfissrexec:smfIssuerExecSubSvcAgreement
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Intended Activities with Ginnie Mae,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Interim Financial Statements,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Issuer Files,OIPM_SINGLE_FAMILY,,smfissrfiles:smfIssuerFiles
+oipm,documentLibrary/Single-Family/Issuer Application Documents,License of Audit Firm,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,List of All Business Lines the Applicant is Involved in and Any Other Noteworthy Industry or Business Relationships,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,List of All Loan Types That Are Originated and/or Serviced by the Applicant,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,List of States the Applicant is Currently Licensed,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Loan Production Breakdown,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Miscellaneous Files,OIPM_SINGLE_FAMILY,,smfissrmisc:smfIssuerMiscFiles
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Narrative of the Applicant’s Securitized Mortgage Activity,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Officer(s) and Employee(s) Information,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Officer(s) and Employee(s) Resumes,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Organizational Chart for Corporate Family and Affiliates,OIPM_SINGLE_FAMILY,,smfissrorg:smfIssuerOrgCorpFamAffiliates
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Quality Control Plans for Underwriting/Origination and Servicing/Subservicer Oversight,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Resolution of Board of Directors and Certificate of Authorized Signatures,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Servicing Experience Detail Worksheet,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Statement Describing the Applicant’s Board of Directors,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Issuer Application Documents,Supplemental Files,OIPM_SINGLE_FAMILY,,smfissrsupp:smfIssuerSupplementalFiles
+oipm,documentLibrary/Single-Family/OIPM Supplemental Documents,Commitment Authority Documents - Inside of OIPM,OIPM_SINGLE_FAMILY,,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Single-Family/OIPM Supplemental Documents,Document Custodian Files - internal GMNA file,OIPM_SINGLE_FAMILY,,smfsuppdoc:smfSupplementalDocuments
+oipm,documentLibrary/Single-Family/Scanned Contract Documents (document custodian - Ashley Askin contact),Contract Custodian Files,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Scanned Contract Documents (document custodian - Ashley Askin contact),Contract Files,OIPM_SINGLE_FAMILY,,
+oipm,documentLibrary/Single-Family/Terminated Issuer Documents (Already in EDRM),Terminated Issuer Files,OIPM_SINGLE_FAMILY,,
+omo,documentLibrary,Procurement Management Division (PMD),OMO_PMD,TRUE,damsBase:damsBaseDocument
+omo,documentLibrary/Procurement Management Division (PMD),General Documents,OMO_PMD,TRUE,
+omo,documentLibrary/Procurement Management Division (PMD)/General Documents,Procurement Miscellaneous Documents,OMO_PMD,,
+omo,documentLibrary/Procurement Management Division (PMD),Procurement Documents,OMO_PMD,TRUE,
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Contract Documents,OMO_PMD,,pd:contractDocument
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Award Documents,OMO_PMD,,pd:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Modifications,OMO_PMD,,pd:modifications
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Task Orders,OMO_PMD,,pd:taskOrders
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Statement of Work,OMO_PMD,,pd:statementOfWork
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,Invoices,OMO_PMD,,pd:invoices
+omo,documentLibrary/Procurement Management Division (PMD)/Procurement Documents,"Other, Miscellaneous",OMO_PMD,,pd:otherMiscellaneous
+omo,documentLibrary/Procurement Management Division (PMD),COR Contract Working Files,OMO_PMD,TRUE,
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Pre-Award Documents,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P01 RCS Package (Complete),OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P02 COR Nomination,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P02a COR Letter of Termination,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P02b COR Nomination,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P02c COR Delegation,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P03 COR Certifications,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P04 COR Appointment Letter,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P04a COR Appointment Letter,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P05 Misc,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents,P06 Correspondence,OMO_PMD,,ccwf:preAwardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Solicitation Documents,OMO_PMD,,ccwf:solicitationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents,S01 Proposal,OMO_PMD,,ccwf:solicitationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents,S02 Other Misc,OMO_PMD,,ccwf:solicitationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents,S03 Correspondence,OMO_PMD,,ccwf:solicitationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Award Documents,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E01 Contract Award,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E02 Delivery Order Award,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E03 Task Order Award,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E04 Modification Award,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E05 IAA,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E06 Other Misc,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents,E07 Correspondence,OMO_PMD,,ccwf:awardDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Administration Documents,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A01 Stay Performance CO,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A02 Notice to Proceed,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A06 Key Personnel Chg,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A07 Security Check Initial,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A08 Security Issues,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A09 Badging,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents,A10 Liquidated Damages,OMO_PMD,,ccwf:administrationDocument
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Invoices,OMO_PMD,,ccwf:invoice
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,"Modifications, Delivery Orders, Tasks",OMO_PMD,,ccwf:modDeliveryOrderTask
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Close-out Documents,OMO_PMD,,ccwf:closeOut
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Ratification Documents,OMO_PMD,,ccwf:ratification
+omo,documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files,Post-Award Documents,OMO_PMD,,ccwf:postAwardDocument
+omo,documentLibrary,Administration Management Division (AMD),OMO_AMD,TRUE,damsBase:damsBaseDocument
+omo,documentLibrary/Administration Management Division (AMD),General Documents,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/General Documents,Administration Documents,OMO_AMD,,
+omo,documentLibrary/Administration Management Division (AMD),Employee Labor Relations,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/Employee Labor Relations,Hearing,OMO_AMD,,elrd:hearing
+omo,documentLibrary/Administration Management Division (AMD)/Employee Labor Relations,Complaint,OMO_AMD,,elrd:complaint
+omo,documentLibrary/Administration Management Division (AMD),HR,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/HR,Separations,OMO_AMD,,amdhr:separations
+omo,documentLibrary/Administration Management Division (AMD)/HR,Performance,OMO_AMD,,amdhr:performance
+omo,documentLibrary/Administration Management Division (AMD),Training,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/Training,Mandatory (InCompass),OMO_AMD,,amdtrng:mandatoryInCompass
+omo,documentLibrary/Administration Management Division (AMD)/Training,Continuing Education,OMO_AMD,,amdtrng:continuingEducation
+omo,documentLibrary/Administration Management Division (AMD)/Training,Certifications,OMO_AMD,,amdtrng:certifications
+omo,documentLibrary/Administration Management Division (AMD)/Training,Leadership Development,OMO_AMD,,amdtrng:leadershipDevelopment
+omo,documentLibrary/Administration Management Division (AMD),Personnel,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/Personnel,Awards,OMO_AMD,,amdp:awards
+omo,documentLibrary/Administration Management Division (AMD)/Personnel,Promotions,OMO_AMD,,amdp:promotions
+omo,documentLibrary/Administration Management Division (AMD)/Personnel,Details,OMO_AMD,,amdp:details
+omo,documentLibrary/Administration Management Division (AMD)/Personnel,Reassignments,OMO_AMD,,amdp:reassignments
+omo,documentLibrary/Administration Management Division (AMD)/Personnel,Disciplinary Actions,OMO_AMD,,amdp:disciplinaryActions
+omo,documentLibrary/Administration Management Division (AMD),SOP,OMO_AMD,TRUE,
+omo,documentLibrary/Administration Management Division (AMD)/SOP,Training Request,OMO_AMD,,amds:trainingRequest
+omo,documentLibrary,Workforce Innovation Team (WIT),OMO_WIT,TRUE,damsBase:damsBaseDocument
+omo,documentLibrary/Workforce Innovation Team (WIT),Human Capital Report,OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/Human Capital Report,Biweekly Report,OMO_WIT,,withcr:biweeklyReport
+omo,documentLibrary/Workforce Innovation Team (WIT),Ginnie Post (Newsletter),OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/Ginnie Post (Newsletter),Biweekly Edition,OMO_WIT,,witgp:biweeklyEdition
+omo,documentLibrary/Workforce Innovation Team (WIT),Federal Employee Viewpoint Survey,OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/Federal Employee Viewpoint Survey,Annual Fiscal Year,OMO_WIT,,witfevs:annualFiscalYear
+omo,documentLibrary/Workforce Innovation Team (WIT),OMO Scorecard,OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/OMO Scorecard,Annual Performance Reports (OMO),OMO_WIT,,witomos:annualPerformanceReports
+omo,documentLibrary/Workforce Innovation Team (WIT),OMO Performance Plan,OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/OMO Performance Plan,Annual Performance Final (OMO),OMO_WIT,,witomopp:annualPerformanceFinal
+omo,documentLibrary/Workforce Innovation Team (WIT),Skill Gap Analysis,OMO_WIT,TRUE,
+omo,documentLibrary/Workforce Innovation Team (WIT)/Skill Gap Analysis,Annual Analysis,OMO_WIT,,witsga:annualAnalysis
+opevp,documentLibrary,"Strategic Planning, Policy and Communications (SPPC)",OPEVP_SSPC,TRUE,damsBase:damsBaseDocument
+opevp,documentLibrary,Governance and Compliance (TFG),OPEVP_TFG,TRUE,
+opevp,documentLibrary/Governance and Compliance (TFG),General Documents,OPEVP_TFG,TRUE,
+opevp,documentLibrary/Governance and Compliance (TFG)/General Documents,Governance Compliance Documents,OPEVP_TFG,,
+opevp,"documentLibrary/Strategic Planning, Policy and Communications (SPPC)",General Documents,OPEVP_SSPC,TRUE,
+opevp,"documentLibrary/Strategic Planning, Policy and Communications (SPPC)/General Documents",Strategic Planning Documents,OPEVP_SSPC,,
+oso,documentLibrary,Customer Experience (CX),OSO_CX,TRUE,damsBase:damsBaseDocument
+oso,documentLibrary,Mortgage-Backed Securities (MBS),OSO_MBS,TRUE,damsBase:damsBaseDocument
+oso,documentLibrary,Process and Product Development (PPD),OSO_PPD,TRUE,damsBase:damsBaseDocument
+oso,documentLibrary,Program Administration Division (PAD),OSO_PAD,TRUE,damsBase:damsBaseDocument
+oso,documentLibrary/Customer Experience (CX),General Documents,OSO_CX,TRUE,
+oso,documentLibrary/Customer Experience (CX)/General Documents,Customer Experience Documents,OSO_CX,,
+oso,documentLibrary/Mortgage-Backed Securities (MBS),General Documents,OSO_MBS,TRUE,
+oso,documentLibrary/Mortgage-Backed Securities (MBS)/General Documents,Operations Documents,OSO_MBS,,
+oso,documentLibrary/Process and Product Development (PPD),General Documents,OSO_PPD,TRUE,
+oso,documentLibrary/Process and Product Development (PPD)/General Documents,PPD Documents,OSO_PPD,,
+oso,documentLibrary/Program Administration Division (PAD),General Documents,OSO_PAD,TRUE,
+oso,documentLibrary/Program Administration Division (PAD)/General Documents,Administration Documents,OSO_PAD,,

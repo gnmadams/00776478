@@ -1,0 +1,20 @@
+{
+	"contentMetadata": {
+		"metadataValue": "{metadataSettings}",
+		"metadataValueDownloadUrl": "",
+		"metadataEnabled": true
+	},
+	"folderMetadata": {
+		"metadataEnabled": false
+	},
+	"simpleSearch": {
+		"searchValue": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<simple-search>\n\t<!-- For Repository -->\n\t<match pattern=\"\/app: company_home\" >\n\t\t<target useTags=\"false\" useText=\"true\">\n\t\t\t<property name=\"cm:name\" \/>\n\t\t\t<property name=\"cm:title\" \/>\n\t\t\t<property name=\"cm:description\"\/>\n\t\t<\/target>\n\t<\/match>\n<\/simple-search>",
+		"searchValueDownloadUrl": "\/api\/node\/content\/workspace\/SpacesStore\/3a65b3ca-4e89-40bc-b1b8-bab837d46401\/EmailManagerSimpleSearchSettings.xml?a=true",
+		"searchEnabled": true
+	},
+	"advancedSearch": {
+		"searchValue": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<advanced-search>\n\t<!-- For Repository test -->\n\t<match pattern=\"\/app:company_home\" >\n\t\t<target useTags=\"false\" useText=\"true\">\n\t\t\t<property name=\"cm:name\" \/>\n\t\t\t<property name=\"cm:title\" \/>\n\t\t\t<hr\/>\n\t\t\t<property name=\"cm:description\">\n\t\t\t\t<ui multiline=\"true\"\/>\n\t\t\t<\/property>\n\t\t<\/target>\n\t<\/match>\n<\/advanced-search>",
+		"searchValueDownloadUrl": "\/api\/node\/content\/workspace\/SpacesStore\/8961c3a1-3df8-4adf-bc86-35726c81da3e\/EmailManagerAdvancedSearchSettings.xml?a=true",
+		"searchEnabled": true
+	}
+}

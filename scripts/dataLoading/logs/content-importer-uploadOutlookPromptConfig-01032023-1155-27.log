@@ -1,0 +1,454 @@
+01/03/23 11:55:27 INFO  - 351  - App.displayAndLog: ========================== Processing uploadOutlookPromptConfig ============================
+01/03/23 11:55:27 INFO  - 357  - App.logArguments: Setting org.gnma.dams.content_importer package verbosity to TRACE.
+01/03/23 11:55:27 INFO  - 359  - App.logArguments: Initializing update to alfresco intance (http://localhost:8080) as admin.
+01/03/23 11:55:27 DEBUG - 360  - App.logArguments: file=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\folders.csv
+01/03/23 11:55:27 DEBUG - 361  - App.logArguments: host=http://localhost:8080
+01/03/23 11:55:27 DEBUG - 362  - App.logArguments: user=admin
+01/03/23 11:55:27 DEBUG - 363  - App.logArguments: pwort=admin
+01/03/23 11:55:27 DEBUG - 364  - App.logArguments: dataLocation=null
+01/03/23 11:55:27 DEBUG - 365  - App.logArguments: deleteSiteIfExists=false
+01/03/23 11:55:27 DEBUG - 366  - App.logArguments: action=uploadOutlookPromptConfig
+01/03/23 11:55:27 DEBUG - 367  - App.logArguments: verbosity=TRACE
+01/03/23 11:55:27 DEBUG - 368  - App.logArguments: uri=null
+01/03/23 11:55:27 DEBUG - 369  - App.logArguments: jsonFormat=json
+01/03/23 11:55:27 DEBUG - 370  - App.logArguments: validActions=contentUpload/categoriesUpload/userUpload/sitesUpload/foldersUpload/foldersDelete/deleteAllSites/updateServerLicense/updateClientLicense/uploadOutlookSearchSettings/listActions/jsonPost/groupsUpload/generateLdif/processLdapGroupsUsers/deleteLdap/folderPermissionsUpdate/deleteContentUploaderConfig/updateContentUploaderConfig/uploadOutlookPromptConfig/getVersion
+01/03/23 11:55:27 DEBUG - 371  - App.logArguments: rangeStr=null
+01/03/23 11:55:27 DEBUG - 372  - App.logArguments: propsFile=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\ETL.properties
+01/03/23 11:55:27 DEBUG - 373  - App.logArguments: filterStr=null
+01/03/23 11:55:27 DEBUG - 374  - App.logArguments: maxRows=999999999
+01/03/23 11:55:27 DEBUG - 375  - App.logArguments: jks=
+01/03/23 11:55:27 DEBUG - 376  - App.logArguments: jksPwort=
+01/03/23 11:55:27 DEBUG - 377  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:27 DEBUG - 378  - App.logArguments: groupsFile=null
+01/03/23 11:55:27 DEBUG - 379  - App.logArguments: usersFile=null
+01/03/23 11:55:27 DEBUG - 380  - App.logArguments: timeout=15
+01/03/23 11:55:27 DEBUG - 381  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:27 DEBUG - 35   - Config.load: Loading Properties
+01/03/23 11:55:27 DEBUG - 42   - Config.load: Loaded Properties.
+01/03/23 11:55:27 DEBUG - 59   - Config.getTransformationMap: Getting transformation Map:
+01/03/23 11:55:27 DEBUG - 91   - Config.getTransformationMap:       Processing mappings
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          siteid
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>ginnie-mae-public
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>ocm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>ginnie-mae-public
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>ocm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Procurement=>omo
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipm
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipm
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          uploaddirectory
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>Multifamily/Issuer Application Documents/Issuer Files
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>Multifamily/Formal Request/FOIA Request
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>Multifamily/OIPM Supplemental Documents/Document Custodian Files - internal GMNA file
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>Multifamily/Issuer Application Documents/Supplemental Files
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>Multifamily/Issuer Application Documents/Miscellaneous Files
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             APMs=>All Participant Memos
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Historical=>Capital Markets Historical Documents/Historical
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>Manufactured Housing/Manufactured Homes Historical Documents
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>All Participant Memos
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>Structured Solutions (REMIC)/REMIC Closing Documents/Issuance Statement
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>Multifamily/Terminated Issuer Documents (Already in EDRM)/Terminated Issuer Files
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>Multifamily/OIPM Supplemental Documents/Commitment Authority Documents - Inside of OIPM
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Procurement=>Procurement Management Division (PMD)/General Documents/Procurement Documents
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>Multifamily/Multifamily Historical Documents
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             01_Official Financial Advisor Letter=>Capital Markets Historical Documents/Official Financial Advisor Letter
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             02_Transaction Initiation Letter=>Capital Markets Historical Documents/Transaction Initiation Letter
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             03_Sponsor Agreement=>Capital Markets Historical Documents/Sponsor Agreement
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             04_Guaranty Agreement=>Capital Markets Historical Documents/Guaranty Agreement
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             05_Legal Advisor Letter=>Capital Markets Historical Documents/Legal Advisor Letter
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplement=>Capital Markets Historical Documents/Offering Circulator Supplement
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             07_Misc=>Capital Markets Historical Documents/Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>Capital Markets Historical Documents/Closing Document - Disk
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>Multifamily/Formal Request/FOIA Supplemental
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>Multifamily/Defaulted Issuers (Already in EDRM)/Default Issuer Files
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          contenttype
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>smfissrfiles:smfIssuerFiles
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>smfformreq:smfFormalRequest
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>smfissrapp:smfIssuerApplicationDocuments
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>smfissrsupp:smfIssuerSupplementalFiles
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>smfissrmisc:smfIssuerMiscFiles
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>damsBase:damsBaseDocument
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>mhdoc:mhDocuments
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Base Type=>damsBase:damsBaseDocument
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>smftermissr:smfTerminatedIssuerDocuments
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>smfsuppdoc:smfSupplementalDocuments
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Procurement=>damsBase:damsBaseDocument
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipmroot:oipmRoot
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipmroot:oipmRoot
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          gnmaRoot:documentType
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             APMs=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILE=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Commitment Authority Files=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             CONT=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Custodian File=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             Historical=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             ISSUER FILE=>07_Misc
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplemnet=>06_Offering Circulator Supplement
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document -=>08_Closing Document - Disk Historical
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             08_Closing Documenent - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILES=>07_Misc
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          overwrite
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          description
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>File coming from EDRM to DAMS
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          majorversion
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          damsasp:extDocSource
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>EDRM
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          maRoot:externalDocumentVersion
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>1.0
+01/03/23 11:55:27 DEBUG - 98   - Config.getTransformationMap:          containerid
+01/03/23 11:55:27 DEBUG - 104  - Config.getTransformationMap:             =>documentlibrary
+01/03/23 11:55:27 DEBUG - 112  - Config.getTransformationMap: Done generating transformation map.
+01/03/23 11:55:27 DEBUG - 124  - Config.getReplacementMap: Getting replacement Map:
+01/03/23 11:55:27 DEBUG - 150  - Config.getReplacementMap:       Processing mappings
+01/03/23 11:55:27 DEBUG - 153  - Config.getReplacementMap: Done generating replacement map.
+01/03/23 11:55:27 INFO  - 55   - ConfigGeneratorService.processOutlookConfig: Processing Outlook Config...
+01/03/23 11:55:27 DEBUG - 71   - CSV.csvReader: Getting CSV from file.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 0
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ccr parentFolder=documentLibrary folderName=Department of Housing and Urban Development (HUD) Offices of Public Affairs template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 1
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ccr parentFolder=documentLibrary folderName=Industry Associations template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 2
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ccr parentFolder=documentLibrary folderName=Media template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 3
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ccr parentFolder=documentLibrary folderName=Office of Congressional and Intergovernmental Relations template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 4
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ginnie-mae-public parentFolder=documentLibrary folderName=All Participant Memos template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 5
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ginnie-mae-public parentFolder=documentLibrary folderName=Documentation template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 6
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary folderName=Budget template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 7
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary folderName=Controller’s Division template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 8
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary folderName=Governance and Compliance template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 9
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary folderName=Treasury Division template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 10
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records folderName=Fiscal Year 2021 template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 11
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021 folderName=Cash Receipts Vouchers (CRVs) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 12
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021 folderName=Disbursement Vouchers (DVs) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 13
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs) folderName=Miscellaneous template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 14
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs) folderName=Non-GSA Contracts template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 15
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocfo parentFolder=documentLibrary/Treasury Division/Treasury Financial Records/Fiscal Year 2021/Disbursement Vouchers (DVs) folderName=Overnight Investment template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 16
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary folderName=Capital Markets Historical Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 17
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary folderName=Global Emerging Market template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 18
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary folderName=Market Intelligence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 19
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary folderName=Structured Solutions template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 20
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary/Global Emerging Market folderName=General Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 21
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary/Market Intelligence folderName=General Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 22
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=ocm parentFolder=documentLibrary/Structured Solutions folderName=REMIC Closing Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 23
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oedts parentFolder=documentLibrary folderName=Enterprise Data Solutions Division (EDS) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 24
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oedts parentFolder=documentLibrary folderName=Infrastructure Group template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 25
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oedts parentFolder=documentLibrary folderName=Project Management Office (PMO) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 26
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oedts parentFolder=documentLibrary folderName=Technology Management Division (TMD) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 27
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oer parentFolder=documentLibrary folderName=Counterparty Risk Analysis Division (TRC) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 28
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oer parentFolder=documentLibrary folderName=Economical Modeling Analysis Division (TR) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 29
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oer parentFolder=documentLibrary folderName=Operational Risk Analysis Division (TRO) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 30
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary folderName=Manufactured Housing template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 31
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary folderName=Multifamily template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 32
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary folderName=Single-Family template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 33
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Manufactured Housing folderName=Manufactured Homes Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 34
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Manufactured Housing folderName=Manufactured Homes Historical Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 35
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Monitoring And Asset Management folderName=Monitoring And Asset Management Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 36
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 37
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Defaulted Issuers (Already in EDRM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 38
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Electronic Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 39
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Electronic Transfer Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 40
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Enterprise Correspondence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 41
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Formal Request template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 42
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Historical Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 43
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Issuer Application Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 44
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=OIPM Supplemental Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 45
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Scanned Contract Documents (document custodian - Ashley Askin contact) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 46
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily folderName=Terminated Issuer Documents (Already in EDRM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 47
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Contract Documents folderName=OIPM-Contract Documents (Specific to a group in GNMA reviewing the various contracts.) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 48
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Enterprise Correspondence folderName=All Participant Memoranda (APM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 49
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Formal Request folderName=FOIA Request template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 50
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Formal Request folderName=FOIA Supplemental template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 51
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Applicant’s Organizational Structure Chart template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 52
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Certificate of Insurance (ACORD document) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 53
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Evidence of Errors and Omissions Coverage template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 54
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Evidence of Fidelity Bond Insurance Coverage template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 55
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Executed Subservicing Agreement template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 56
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Issuer Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 57
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Miscellaneous Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 58
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Organizational Chart for Corporate Family and Affiliates template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 59
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/Issuer Application Documents folderName=Supplemental Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 60
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/OIPM Supplemental Documents folderName=Commitment Authority Documents - Inside of OIPM template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 61
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Multifamily/OIPM Supplemental Documents folderName=Document Custodian Files - internal GMNA file template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 62
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 63
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Defaulted Issuers (Already in EDRM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 64
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Electronic Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 65
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Electronic Transfer Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 66
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Enterprise Correspondence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 67
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Formal Request template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 68
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Historical Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 69
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Issuer Application Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 70
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=OIPM Supplemental Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 71
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Scanned Contract Documents (document custodian - Ashley Askin contact) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 72
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family folderName=Terminated Issuer Documents (Already in EDRM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 73
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Contract Documents folderName=OIPM-Contract Documents (Specific to a group in GNMA reviewing the various contracts.) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 74
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Enterprise Correspondence folderName=All Participant Memoranda (APM) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 75
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Formal Request folderName=FOIA Request template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 76
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Formal Request folderName=FOIA Supplemental template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 77
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Applicant’s Organizational Structure Chart template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 78
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Certificate of Insurance (ACORD document) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 79
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Evidence of Errors and Omissions Coverage template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 80
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Evidence of Fidelity Bond Insurance Coverage template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 81
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Executed Subservicing Agreement template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 82
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Issuer Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 83
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Miscellaneous Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 84
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Organizational Chart for Corporate Family and Affiliates template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 85
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/Issuer Application Documents folderName=Supplemental Files template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 86
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/OIPM Supplemental Documents folderName=Commitment Authority Documents - Inside of OIPM template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 87
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oipm parentFolder=documentLibrary/Single-Family/OIPM Supplemental Documents folderName=Document Custodian Files - internal GMNA file template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 88
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary folderName=Procurement Management Division (PMD) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 89
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Contract Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 90
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Award Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 91
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Modifications template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 92
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Task Orders template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 93
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Statement of Work template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 94
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Invoices template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 95
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/Procurement Documents folderName=Other, Miscellaneous template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 96
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Pre-Award Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 97
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P01 RCS Package (Complete) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 98
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P02 COR Nomination template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 99
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P02a COR Letter of Termination template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 100
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P02b COR Nomination template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 101
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P02c COR Delegation template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 102
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P03 COR Certifications template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 103
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P04 COR Appointment Letter template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 104
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P04a COR Appointment Letter template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 105
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P05 Misc template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 106
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Pre-Award Documents folderName=P06 Correspondence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 107
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Solicitation Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 108
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents folderName=S01 Proposal template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 109
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents folderName=S02 Other Misc template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 110
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Solicitation Documents folderName=S03 Correspondence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 111
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Award Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 112
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E01 Contract Award template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 113
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E02 Delivery Order Award template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 114
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E03 Task Order Award template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 115
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E04 Modification Award template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 116
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E05 IAA template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 117
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E06 Other Misc template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 118
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Award Documents folderName=E07 Correspondence template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 119
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Administration Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 120
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A01 Stay Performance CO template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 121
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A02 Notice to Proceed template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 122
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A06 Key Personnel Chg template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 123
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A07 Security Check Initial template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 124
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A08 Security Issues template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 125
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A09 Badging template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 126
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files/Administration Documents folderName=A10 Liquidated Damages template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 127
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Invoices template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 128
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Modifications, Delivery Orders, Tasks template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 129
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Close-out Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 130
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Ratification Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 131
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Procurement Management Division (PMD)/COR Contract Working Files folderName=Post-Award Documents template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 132
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary folderName=Administration Management Division (AMD) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 133
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Employee Labor Relations folderName=Hearing template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 134
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Employee Labor Relations folderName=Complaint template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 135
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/HR folderName=Separations template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 136
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/HR folderName=Performance template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 137
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Training folderName=Mandatory (InCompass) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 138
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Training folderName=Continuing Education template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 139
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Training folderName=Certifications template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 140
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Training folderName=Leadership Development template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 141
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Personnel folderName=Awards template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 142
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Personnel folderName=Promotions template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 143
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Personnel folderName=Details template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 144
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Personnel folderName=Reassignments template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 145
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/Personnel folderName=Disciplinary Actions template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 146
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Administration Management Division (AMD)/SOP folderName=Training Request template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 147
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary folderName=Workforce Innovation Team (WIT) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 148
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/Human Capital Report folderName=Biweekly Report template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 149
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/Ginnie Post (Newsletter) folderName=Biweekly Edition template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 150
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/Federal Employee Viewpoint Survey folderName=Annual Fiscal Year template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 151
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/OMO Scorecard folderName=Annual Performance Reports (OMO) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 152
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/OMO Performance Plan folderName=Annual Performance Final (OMO) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 153
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=omo parentFolder=documentLibrary/Workforce Innovation Team (WIT)/Skill Gap Analysis folderName=Annual Analysis template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 154
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=opevp parentFolder=documentLibrary folderName=Strategic Planning, Policy and Communications (SPPC) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 155
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oso parentFolder=documentLibrary folderName=Customer Experience (CX) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 156
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oso parentFolder=documentLibrary folderName=Mortgage-Backed Securities (MBS) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 157
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oso parentFolder=documentLibrary folderName=Process and Product Development (PPD) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 158
+01/03/23 11:55:27 DEBUG - 160  - ConfigGeneratorService.createOutlookConfiguration: Creating Outlook configuration sitId=oso parentFolder=documentLibrary folderName=Program Administration Division (PAD) template=.
+01/03/23 11:55:27 INFO  - 137  - AlfrescoServiceBase.shouldIterate: Processing CSV row 159
+01/03/23 11:55:27 DEBUG - 151  - AlfrescoServiceBase.shouldIterate:    End of CSV has been reached.
+01/03/23 11:55:28 INFO  - 104  - ConfigGeneratorService.sendConfigToAlfresco: Outlook Integration setting push succeeded.
+01/03/23 11:55:28 DEBUG - 105  - ConfigGeneratorService.sendConfigToAlfresco: Response:
+01/03/23 11:55:28 DEBUG - 106  - ConfigGeneratorService.sendConfigToAlfresco: {
+}
+
+01/03/23 11:55:28 INFO  - 351  - App.displayAndLog: Processed:160 
+Succeeded:160 
+Partially Failed:0 
+Failed:0 
+Start Time:01/03/2023 11:55:27 
+End Time:01/03/2023 11:55:28 
+Run Time: 0 days, 0 hours, 0 minutes, 1 seconds 
+Speed:0.00 second(s) per file
+01/03/23 11:55:28 INFO  - 351  - App.displayAndLog: ------------------------- Done processing action ---------------------------

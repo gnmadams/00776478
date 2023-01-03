@@ -1,0 +1,9 @@
+	<match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="amdtrng:employeeFirstName"/>
+			<property name="amdtrng:employeeLastName"/>
+			<property name="amdtrng:fiscalYear"/>
+			<property name="amdtrng:status"/>
+		</target>
+	 </match>
+

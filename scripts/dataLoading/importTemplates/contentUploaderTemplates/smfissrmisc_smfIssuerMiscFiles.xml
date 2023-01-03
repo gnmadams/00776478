@@ -1,0 +1,8 @@
+	 <match pattern="{matchPattern}" type="folder">
+		<target attachmentType="{attachmentType}" emlType="{emlType}" msgType="{msgType}" useTags="false">
+			<property name="oipmroot:issuerNumber"/>
+			<property name="oipmroot:issuerName"/>
+			<property name="smfissrmisc:approvalDate"/>
+		</target>
+	 </match>
+

@@ -1,0 +1,135 @@
+01/03/23 11:55:24 INFO  - 351  - App.displayAndLog: ========================== Processing jsonPost ============================
+01/03/23 11:55:24 INFO  - 357  - App.logArguments: Setting org.gnma.dams.content_importer package verbosity to TRACE.
+01/03/23 11:55:24 INFO  - 359  - App.logArguments: Initializing update to alfresco intance (http://localhost:8080) as admin.
+01/03/23 11:55:24 DEBUG - 360  - App.logArguments: file=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\outlookIntegrationLicenses.txt
+01/03/23 11:55:24 DEBUG - 361  - App.logArguments: host=http://localhost:8080
+01/03/23 11:55:24 DEBUG - 362  - App.logArguments: user=admin
+01/03/23 11:55:24 DEBUG - 363  - App.logArguments: pwort=admin
+01/03/23 11:55:24 DEBUG - 364  - App.logArguments: dataLocation=null
+01/03/23 11:55:24 DEBUG - 365  - App.logArguments: deleteSiteIfExists=false
+01/03/23 11:55:24 DEBUG - 366  - App.logArguments: action=jsonPost
+01/03/23 11:55:24 DEBUG - 367  - App.logArguments: verbosity=TRACE
+01/03/23 11:55:24 DEBUG - 368  - App.logArguments: uri=/alfresco/s/wps/mail/license/client/Outlook
+01/03/23 11:55:24 DEBUG - 369  - App.logArguments: jsonFormat=jsonFormData
+01/03/23 11:55:24 DEBUG - 370  - App.logArguments: validActions=contentUpload/categoriesUpload/userUpload/sitesUpload/foldersUpload/foldersDelete/deleteAllSites/updateServerLicense/updateClientLicense/uploadOutlookSearchSettings/listActions/jsonPost/groupsUpload/generateLdif/processLdapGroupsUsers/deleteLdap/folderPermissionsUpdate/deleteContentUploaderConfig/updateContentUploaderConfig/uploadOutlookPromptConfig/getVersion
+01/03/23 11:55:24 DEBUG - 371  - App.logArguments: rangeStr=null
+01/03/23 11:55:24 DEBUG - 372  - App.logArguments: propsFile=C:\opt\alfresco_support_sdk\scripts\dataLoading\importTemplates\ETL.properties
+01/03/23 11:55:24 DEBUG - 373  - App.logArguments: filterStr=null
+01/03/23 11:55:24 DEBUG - 374  - App.logArguments: maxRows=999999999
+01/03/23 11:55:24 DEBUG - 375  - App.logArguments: jks=
+01/03/23 11:55:24 DEBUG - 376  - App.logArguments: jksPwort=
+01/03/23 11:55:24 DEBUG - 377  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:24 DEBUG - 378  - App.logArguments: groupsFile=null
+01/03/23 11:55:24 DEBUG - 379  - App.logArguments: usersFile=null
+01/03/23 11:55:24 DEBUG - 380  - App.logArguments: timeout=15
+01/03/23 11:55:24 DEBUG - 381  - App.logArguments: ldapDeleteBeforeCreate=false
+01/03/23 11:55:24 DEBUG - 35   - Config.load: Loading Properties
+01/03/23 11:55:24 DEBUG - 42   - Config.load: Loaded Properties.
+01/03/23 11:55:24 DEBUG - 59   - Config.getTransformationMap: Getting transformation Map:
+01/03/23 11:55:24 DEBUG - 91   - Config.getTransformationMap:       Processing mappings
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          siteid
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>ginnie-mae-public
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>ocm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>ginnie-mae-public
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>ocm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Procurement=>omo
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipm
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipm
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          uploaddirectory
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>Multifamily/Issuer Application Documents/Issuer Files
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>Multifamily/Formal Request/FOIA Request
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>Multifamily/OIPM Supplemental Documents/Document Custodian Files - internal GMNA file
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>Multifamily/Issuer Application Documents/Supplemental Files
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>Multifamily/Issuer Application Documents/Miscellaneous Files
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             APMs=>All Participant Memos
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Historical=>Capital Markets Historical Documents/Historical
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>Manufactured Housing/Manufactured Homes Historical Documents
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>All Participant Memos
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OCFO Capital Markets=>Structured Solutions (REMIC)/REMIC Closing Documents/Issuance Statement
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>Multifamily/Terminated Issuer Documents (Already in EDRM)/Terminated Issuer Files
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>Multifamily/OIPM Supplemental Documents/Commitment Authority Documents - Inside of OIPM
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Procurement=>Procurement Management Division (PMD)/General Documents/Procurement Documents
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>Multifamily/Multifamily Historical Documents
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             01_Official Financial Advisor Letter=>Capital Markets Historical Documents/Official Financial Advisor Letter
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             02_Transaction Initiation Letter=>Capital Markets Historical Documents/Transaction Initiation Letter
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             03_Sponsor Agreement=>Capital Markets Historical Documents/Sponsor Agreement
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             04_Guaranty Agreement=>Capital Markets Historical Documents/Guaranty Agreement
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             05_Legal Advisor Letter=>Capital Markets Historical Documents/Legal Advisor Letter
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplement=>Capital Markets Historical Documents/Offering Circulator Supplement
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             07_Misc=>Capital Markets Historical Documents/Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>Capital Markets Historical Documents/Closing Document - Disk
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>Multifamily/Formal Request/FOIA Supplemental
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>Multifamily/Defaulted Issuers (Already in EDRM)/Default Issuer Files
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          contenttype
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ISSR MultiFamily=>smfissrfiles:smfIssuerFiles
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM FOIA Requests=>smfformreq:smfFormalRequest
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Document Custodian=>smfissrapp:smfIssuerApplicationDocuments
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             SUPP MultiFamily=>smfissrsupp:smfIssuerSupplementalFiles
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             MISC MultiFamily=>smfissrmisc:smfIssuerMiscFiles
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             All Participant Memos=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CapitalMarkets=>damsBase:damsBaseDocument
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ManufacturedHomes=>mhdoc:mhDocuments
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             All Participants Memo's=>apm:ALL_PARTICIPANT_MEMOS
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Base Type=>damsBase:damsBaseDocument
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Monitor Terminated Issuer=>smftermissr:smfTerminatedIssuerDocuments
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Commitment Authority=>smfsuppdoc:smfSupplementalDocuments
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Procurement=>damsBase:damsBaseDocument
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CDs MultiFamily=>oipmroot:oipmRoot
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             OIPM Default Issuer=>oipmroot:oipmRoot
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          gnmaRoot:documentType
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             APMs=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILE=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Commitment Authority Files=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             CONT=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Custodian File=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             FOIA Request=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             FOIA Supplemental=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             Historical=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             ISSUER FILE=>07_Misc
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             06_Offering Circulator Supplemnet=>06_Offering Circulator Supplement
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             08_Closing Document -=>08_Closing Document - Disk Historical
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             08_Closing Documenent - Disk=>08_Closing Document - Disk Historical
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             COMMITMENT AUTHORITY FILES=>07_Misc
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          overwrite
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          description
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>File coming from EDRM to DAMS
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          majorversion
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>TRUE
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          damsasp:extDocSource
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>EDRM
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          maRoot:externalDocumentVersion
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>1.0
+01/03/23 11:55:24 DEBUG - 98   - Config.getTransformationMap:          containerid
+01/03/23 11:55:24 DEBUG - 104  - Config.getTransformationMap:             =>documentlibrary
+01/03/23 11:55:24 DEBUG - 112  - Config.getTransformationMap: Done generating transformation map.
+01/03/23 11:55:24 DEBUG - 124  - Config.getReplacementMap: Getting replacement Map:
+01/03/23 11:55:24 DEBUG - 150  - Config.getReplacementMap:       Processing mappings
+01/03/23 11:55:24 DEBUG - 153  - Config.getReplacementMap: Done generating replacement map.
+01/03/23 11:55:24 INFO  - 98   - HttpServices.processJsonPost: ......... Processing JSON post. Posting to: http://localhost:8080/alfresco/s/wps/mail/license/client/Outlook
+01/03/23 11:55:24 DEBUG - 167  - HttpServices.getJsonFromFile: Getting JSON from file.
+01/03/23 11:55:24 DEBUG - 171  - HttpServices.getJsonFromFile: {"serverString":"555028ee9a404521a1630fb5c0d7f4a31b738138f5611f592d745f71f427844973a59526252198435aea36d6468d2213991a8f0a7a020338c4777fd2ac6410bd51b9f4ea533f63b078c4bfae6f5b4dd661c392dd9222c755ddccce4c426dda1b93da66b46e0f462a5ab60a379b42a4a8798f520c79fefc403219b41e240764c492e247fc35f4459db9d4fc4674086008af117d954ddda95062da5528d5b5595687b9c25ece070c7a270e1e6d82ce378082f966b7851b83083766be3db5ab8712776ee2f19176657fe509253a11ba32e6993e637aa0cbd07df93244259d3e0caa4749527725859b596d7ff89772d66fe56476b7e46eb7b732f4d1e30500c4d5b149abd7de156d6b277317e3d0e63206dd1064a43830d5743626d949aac22ad1aa0e5a5d4fa6cdd29eab71c5b6ff6a98eb52ec161b874390dd42c4a244d4e2b2fa91367189f6b96cdaf1355656c091c9018640c6888fe46ae3cf580549ea667a57cff5f68c3a8125797696b876a7207c6a26630c98aa5e36c2886c7ac221c2e6773c98927ad38f092bfd6e765e14113e5919f93b6dc0c89f6f3d27e8ffa9e0b93543c3c7deea4e46c74e9f02292f56699c6928326cafa53b7776dd72a0cbb0b3ca44b82325dfaaeb80308e5302079f5d9d9675f135c6d642edbbf6992c482cda7d161c90ce1d77b9c9d94e8bad85f00ed57f5b1c4f877bd1af95bccc3ab943ddc75a445777ab4a986dab33bbb0b1db24cf097886d35dae8090b4e144e5d8ffe2694729867779616dd8888640f8fedb13348cd53d35d1369f6ee5749cfaefdb86c930e1c58fec4c0e0eaf1612abf7bcfc7934931427f8e0991d777ec089af6840e4d67bafe7599359fbbc1c9ab07b70b7f5fdc6a33904eca8589ce6f9f27fe23e26c033fcf3f31c2c8b45e137b5ba892c816b4fcc55799d6675f6d42bd48ea344ca903ffffd298b52b2824c28c2e80453f2f2ab40033fdffc93579201a0231614228d38406bde9f7cb4648b4f86367580ca9d3be83505fb91a93b649fb4892fafe331894f3228bc92da8a13bb275076ab1d7d2a6c146df2e913455e4ba0ee9f70c6c8cb0b866b10d8cc3259239f88fafe02f4d13d162db6bfc0a20038a09a38edb7f806b02e0a7e3939f8ac007722edb68c24c9e52739e3a171203f6d9d50c9678898257dc2198072e130d5d0d89aae0dad965d8abf2b913295a059f98ec7acf9a372356427c926a767",
+"licenseString":"E5G90-T0W00-11B17-K878N-4U1JX-ZRB944"}
+01/03/23 11:55:24 INFO  - 110  - HttpServices.processJsonPost: Using jsonFormData format.
+01/03/23 11:55:25 INFO  - 124  - HttpServices.processJsonPost: ......... JSON Post succeeded.
+01/03/23 11:55:25 DEBUG - 125  - HttpServices.processJsonPost: Response:
+01/03/23 11:55:25 DEBUG - 126  - HttpServices.processJsonPost: 
+01/03/23 11:55:25 INFO  - 351  - App.displayAndLog: Processed:1 
+Succeeded:1 
+Partially Failed:0 
+Failed:0 
+Start Time:01/03/2023 11:55:24 
+End Time:01/03/2023 11:55:25 
+Run Time: 0 days, 0 hours, 0 minutes, 0 seconds 
+Speed:0.00 second(s) per file
+01/03/23 11:55:25 INFO  - 351  - App.displayAndLog: ------------------------- Done processing action ---------------------------

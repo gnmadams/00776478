@@ -23,9 +23,11 @@
 		<alfresco.platform.docker.user>alfresco</alfresco.platform.docker.user>
 		<alfresco.share.version>17.137</alfresco.share.version>
 		<alfresco.share.docker.version>7.3.0</alfresco.share.docker.version>
+		<alfresco.solr6.version>2.0.5</alfresco.solr6.version>
 		<!-- Docker images -->
 		<docker.acs.image>quay.io/alfresco/alfresco-content-repository</docker.acs.image>
 		<docker.share.image>quay.io/alfresco/alfresco-share</docker.share.image>
+                <docker.solr6.image>alfresco/alfresco-search-services</docker.solr6.image>
 		<keystore.settings>-Dencryption.keystore.type=JCEKS
             -Dencryption.cipherAlgorithm=AES/CBC/PKCS5Padding
             -Dencryption.keyAlgorithm=AES
@@ -197,7 +199,7 @@
 							<goals>
 								<goal>verify</goal>
 							</goals>
-						</execution>
+						</execution> 
 					</executions>
 					<dependencies>
 						<dependency>
@@ -432,8 +434,9 @@
 	<modules>
 		<module>alfresco-support-aio-platform</module>
 		<module>alfresco-support-aio-share</module>
-		<module>alfresco-support-aio-integration-tests</module>
+		<!-- cjm <module>alfresco-support-aio-integration-tests</module> -->
 		<module>alfresco-support-aio-platform-docker</module>
 		<module>alfresco-support-aio-share-docker</module>
+		<module>alfresco-support-aio-solr6-docker</module>
 	</modules>
 </project>

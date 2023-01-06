@@ -107,7 +107,7 @@ EXIT /B 0
 :build_acs
     docker-compose -f "%COMPOSE_FILE_PATH%" kill alfresco-support-aio-acs
     docker-compose -f "%COMPOSE_FILE_PATH%" rm -f alfresco-support-aio-acs
-	call %MVN_EXEC% clean package -pl alfresco-support-aio-integration-tests,alfresco-support-aio-platform,alfresco-support-aio-platform-docker
+	call %MVN_EXEC% clean package -pl alfresco-support-aio-platform,alfresco-support-aio-platform-docker
 EXIT /B 0
 :tail
     docker-compose -f "%COMPOSE_FILE_PATH%" logs -f
@@ -116,10 +116,10 @@ EXIT /B 0
     docker-compose -f "%COMPOSE_FILE_PATH%" logs --tail="all"
 EXIT /B 0
 :prepare-test
-    call %MVN_EXEC% verify -DskipTests=true -pl alfresco-support-aio-platform,alfresco-support-aio-integration-tests,alfresco-support-aio-platform-docker
+    call %MVN_EXEC% verify -DskipTests=true -pl alfresco-support-aio-platform,alfresco-support-aio-platform-docker
 EXIT /B 0
 :test
-    call %MVN_EXEC% verify -pl alfresco-support-aio-platform,alfresco-support-aio-integration-tests
+    call %MVN_EXEC% verify -pl alfresco-support-aio-platform
 EXIT /B 0
 :purge
     docker volume rm -f alfresco-support-aio-acs-volume

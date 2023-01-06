@@ -434,7 +434,6 @@
 	<modules>
 		<module>alfresco-support-aio-platform</module>
 		<module>alfresco-support-aio-share</module>
-		<!-- <module>alfresco-support-aio-integration-tests</module> -->
 		<module>alfresco-support-aio-platform-docker</module>
 		<module>alfresco-support-aio-share-docker</module>
 		<module>alfresco-support-aio-solr6-docker</module>
